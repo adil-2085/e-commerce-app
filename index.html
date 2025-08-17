@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TILUS</title>
+    <!-- bootstrap cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    
+    <!-- bootstrap js cdn link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- font awsome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- custom style link -->
+    <link rel="stylesheet" href="./style.css">
+
+
+</head>
+<body>
+  <div class="main">
+
+        <!-- nav bar section start -->
+
+        <nav class="navbar navbar-expand-lg bg-body-secondary" style="position: sticky; top: 0; z-index: 1050;">
+            <div class="container-fluid">
+              <i class="fa-brands fa-slack fa-2x me-2"></i>
+              <h3 class="fw-bold me-auto cursor">TILUS</h3>
+            
+              <!-- Mobile toggle -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          
+              <!-- Search + Icons -->
+              <div class="collapse navbar-collapse ms-3" id="navbarContent">
+                <form class="d-flex my-2 my-lg-0 flex-grow-1 me-lg-3 justify-content-center" >
+                  <input class="form-control me-2" type="search" placeholder="Search for vintage, classic and other watches" id="searchBox" style="width: 80%;">
+                  <button class="btn btn-outline-dark" type="submit">Search</button>
+                </form>
+            
+                <div class="d-flex text-center">
+                  <div class="me-3 underline transforms"><i class="bi bi-person fs-4"></i><p class="small m-0 cursor">Account</p></div>
+                  <div class="me-2 underline transforms"><i class="bi bi-heart fs-4"></i><p class="small m-0 cursor">Wishlist</p></div>
+                  <div class="px-2 underline transforms"><i class="bi bi-bag fs-4"></i><p class="small m-0 cursor">Cart</p></div>
+                  <div class="px-2 underline transforms"><i class="bi bi-box-seam fs-4"></i><p class="small m-0 cursor">Track</p></div>
+                </div>
+
+              </div>
+            </div>
+        </nav>
+        <!-- navbar section end -->
+
+
+
+
+
+        <!-- javascript for changing searchbar placeholders start -->
+        <script>
+        const searchBox = document.getElementById("searchBox");
+        
+        const searchPlaceholders = [
+          "Search products...",
+          "Search by name...",
+          "Search by category...",
+          "Search by price...",
+          "Search by brand..."
+        ];
+        
+        let i = 0;
+        
+        setInterval(() => {
+          i = (i + 1) % searchPlaceholders.length;
+          searchBox.placeholder = searchPlaceholders[i];
+        }, 3000);
+        </script>
+        <!-- javascript for changing searchbar placeholders end -->
+
+
+
+
+        
+
+        <!-- menu section start -->
+
+        <div class="menu w-100 d-flex flex-wrap flex-md-nowrap justify-content-center gap-2 px-2 py-2 " style="white-space: nowrap;">
+
+
+
+            <div class="dropdown ">
+                <button class="btn dropdown-toggle border-0 transforms" type="button" data-bs-toggle="dropdown">
+                MEN
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./product_list.html">View All</a></li>
+                    <li><a class="dropdown-item" href="#">New arrival</a></li>
+                    <li><a class="dropdown-item" href="#">Trending</a></li>
+                    <li><a class="dropdown-item" href="#">Shop By Looks</a></li>
+                    <li><a class="dropdown-item" href="#">Shop By color</a></li>
+                    <li><a class="dropdown-item" href="#brand">Shop By brand</a></li>
+                    <li><a class="dropdown-item" href="#">Shop By collection</a></li>
+                    <li><a class="dropdown-item" href="#">Shop By price</a></li>
+                </ul>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn  dropdown-toggle border-0 transforms" type="button" data-bs-toggle="dropdown">
+                WOMEN
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">View All</a></li>
+                    <li><a class="dropdown-item" href="#">New arrival</a></li>
+                    <li><a class="dropdown-item" href="#">Trending</a></li>
+                    <li><a class="dropdown-item" href="#">Shop By Looks</a></li>
+                    <li><a class="dropdown-item" href="#">Shop By color</a></li>
+                    <li><a class="dropdown-item" href="#">Shop By brand</a></li>
+                    <li><a class="dropdown-item" href="#">Shop By collection</a></li>
+                    <li><a class="dropdown-item" href="#">Shop By price</a></li>
+                </ul>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn  dropdown-toggle border-0 transforms" type="button" data-bs-toggle="dropdown">
+                SMART WATCHES
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">View All</a></li>
+                    <li><a class="dropdown-item" href="#">New arrival</a></li>
+                    <li><a class="dropdown-item" href="#">Trending</a></li>
+                    <li><a class="dropdown-item" href="#">Shop By gender</a></li>
+                    <li><a class="dropdown-item" href="#">Shop By color</a></li>
+                    <li><a class="dropdown-item" href="#">Shop By brand</a></li>
+                    <li><a class="dropdown-item" href="#">Shop By collection</a></li>
+                    <li><a class="dropdown-item" href="#">Shop By price</a></li>
+                </ul>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn  dropdown-toggle border-0 transforms" type="button" data-bs-toggle="dropdown">
+                PREMIUM WATCHES
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">View All</a></li>
+                    <li><a class="dropdown-item" href="#">Trending</a></li>
+                    <li><a class="dropdown-item" href="#">XYLYS</a></li>
+                    <li><a class="dropdown-item" href="#">Nebula</a></li>
+                    <li><a class="dropdown-item" href="#">Edge</a></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="btn  dropdown-toggle border-0 transforms" type="button" data-bs-toggle="dropdown">
+                WATCHES
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">View All</a></li>
+                    <li><a class="dropdown-item" href="#">New Arrivals</a></li>
+                    <li><a class="dropdown-item" href="#bestseller">Bestsellers</a></li>
+                    <li><a class="dropdown-item" href="#">Trending</a></li>
+                    <li><a class="dropdown-item" href="#">Shop By Function</a></li>
+                    <li><a class="dropdown-item" href="#">Shop By Collection</a></li>
+                    <li><a class="dropdown-item" href="#">Shop By Strap</a></li>
+                    <li><a class="dropdown-item" href="#">Shop By Price</a></li>
+                    <li><a class="dropdown-item" href="#">Shop By Dial</a></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="btn  dropdown-toggle border-0 transforms" type="button" data-bs-toggle="dropdown">
+                INTERNATIONAL BRANDS
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#titan">View All</a></li>
+                    <li><a class="dropdown-item" href="#titan">New Arrivals</a></li>
+                    <li><a class="dropdown-item" href="#bestseller">Bestsellers</a></li>
+                    <li><a class="dropdown-item" href="#titan">Casio</a></li>
+                    <li><a class="dropdown-item" href="#titan">Cerruti</a></li>
+                    <li><a class="dropdown-item" href="#police">Police</a></li>
+                    <li><a class="dropdown-item" href="#tommy">Tommy Hilfiger</a></li>
+                    <li><a class="dropdown-item" href="#anne">Anne Klein</a></li>
+                    <li><a class="dropdown-item" href="#raga">Raga</a></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="btn  dropdown-toggle border-0transforms" type="button" data-bs-toggle="dropdown">
+                GIFTING
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Shop By Price</a></li>
+                    <li><a class="dropdown-item" href="#">Watches For Bride</a></li>
+                    <li><a class="dropdown-item" href="#">Watches For Groom</a></li>
+                    <li><a class="dropdown-item" href="#">Watches For Mothe</a></li>
+                    <li><a class="dropdown-item" href="#">Watches For Father</a></li>
+                    <li><a class="dropdown-item" href="#">Watches For Brother</a></li>
+                    <li><a class="dropdown-item" href="#">Watches For Sister</a></li>
+                    
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="btn  underline border-0 transforms" type="button" data-bs-toggle="dropdown" >
+                SALE
+                </button>
+            </div>
+            <div class="dropdown">
+                <button class="btn underline  border-0 transforms" type="button" data-bs-toggle="dropdown">
+                WATCH SERVICE
+                </button>
+            </div>
+            <div class="dropdown">
+                <button class="btn  border-0 dropdown-toggle transforms" type="button" data-bs-toggle="dropdown">
+                MORE
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./signup.html">Log out</a></li>
+                    <li><a class="dropdown-item" href="./login.html">Login with another account</a></li>
+                    <li><a class="dropdown-item" href="#">Kids Watches</a></li>
+                    <li><a class="dropdown-item" href="#">Couple Watches</a></li>
+                    <li><a class="dropdown-item" href="#">Watches For Groom</a></li>
+                    <li><a class="dropdown-item" href="#">Clocks</a></li>
+                    <li><a class="dropdown-item" href="#">Accessories</a></li>
+                    <li><a class="dropdown-item" href="#">E-Gift Card</a></li>
+                    <li><a class="dropdown-item" href="#">Our Brands</a></li>
+                    <li><a class="dropdown-item" href="#">Encircle</a></li>
+                    <li><a class="dropdown-item" href="#">Corporate Gifting</a></li>
+                    <li><a class="dropdown-item" href="#">Currency Selector</a></li>
+                    <li><a class="dropdown-item" href="#">Luxury Watches</a></li>
+                </ul>
+              </div>
+              
+        </div>
+            
+        <!-- menu section end -->
+
+            
+
+
+
+        <!-- slide section start -->
+                        
+        <div class=" " >
+            <div id="autoCarousel" class="carousel slide pointer" data-bs-ride="carousel">
+              <div class="carousel-inner">
+            
+                <div class="carousel-item active" data-bs-interval="3000">
+                  <img src="./images/rolex main.avif" class="d-block w-100" alt="Slide 1">
+                </div>
+                
+                <div class="carousel-item" data-bs-interval="3000">
+                  <img src="./images/raymond main.avif" class="d-block w-100" alt="Slide 3">
+                </div>
+
+                <div class="carousel-item" data-bs-interval="3000">
+                  <img src="./images/titan4.webp" class="d-block w-100" alt="Slide 2">
+                </div>
+                
+
+                <div class="carousel-item" data-bs-interval="3000">
+                  <img src="./images/titan1.webp" class="d-block w-100" alt="Slide 3">
+                </div>
+
+                <div class="carousel-item" data-bs-interval="3000">
+                  <img src="./images/titan5.webp" class="d-block w-100" alt="Slide 3">
+                </div>
+
+                <div class="carousel-item" data-bs-interval="3000">
+                  <img src="./images/titan3.webp" class="d-block w-100" alt="Slide 3">
+                </div>
+                
+                <div class="carousel-item" data-bs-interval="3000">
+                  <img src="./images/titan2.webp" class="d-block w-100" alt="Slide 3">
+                </div>
+
+                <div class="carousel-item" data-bs-interval="3000">
+                  <img src="./images/titan6.webp" class="d-block w-100" alt="Slide 3">
+                </div>
+            
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#autoCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon rounded-5"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#autoCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+              
+            </div>
+        </div>
+
+        <!-- slide section end -->
+
+
+
+        <!-- offer section start -->
+  
+        <div class=" w-100 d-flex justify-content-center mt-4 mb-4" id="sale">
+              <div id="autoCarousel" class="carousel slide" data-bs-ride="carousel" style="width: 90%;">
+                  <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                <div class="carousel-inner">
+              
+                  <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="./images/offer1.png" class="d-block w-100" alt="Slide 1">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./images/offer2.jpg" class="d-block w-100" alt="Slide 2">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./images/offer3.webp" class="d-block w-100" alt="Slide 3">
+                  </div>
+                  
+                  <button class="carousel-control-prev" type="button" data-bs-target="#autoCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon rounded-5"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#autoCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </button>
+                </div>
+              </div>
+        </div>
+            
+        <!-- offer section end -->
+
+          
+
+        <!-- double image section start -->
+          
+          <div class="w-100 d-flex justify-content-center mt-4">
+            <img src="./images/buy_part1.webp   " alt="" class="me-4 pointer scroll-transform" style="width: 44%;">
+            <img src="./images/buy_part2.webp   " alt="" class="pointer scroll-transform" style="width: 44%;">
+          </div>
+          
+        <!-- double image section end -->
+          
+
+        
+
+          <!-- fixed image section start -->
+  
+          <div class="w-100 my-4 d-flex justify-content-center">
+              <img src="./images/nebula.webp" alt="" style="width: 90%;">
+          </div>
+  
+          <!-- fixed image section end -->
+
+          
+
+
+        <!-- scrollable slide section start -->
+
+        <div class="scroll-container" style=" width: 100%;">
+            <div class="scroll-content d-flex  flex-nowrap w-100 ">
+              
+              <div class=" underline pointer ms-2 flex-shrink-0 scroll-transform" style="height: 100%;width:19%;">
+                <div class="  w-100 h-100">
+                  <div class="d-flex justify-content-center" style="width: 100%;height: 85%;">
+                    <img src="./images/slide1.webp" class="" alt="1" style="width:100%; height:100%;">
+                  </div>
+                  <div class="text-center " style="width: 100%;height: 13%;">
+                    <span class=" fs-4 mb-2">Sale</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="  underline pointer flex-shrink-0 scroll-transform" style="height: 100%;width:19%;">
+                <div class="  w-100 h-100">
+                    <div class="d-flex justify-content-center" style="width: 100%;height: 85%;">
+                        <img src="./images/slide2.webp" class="" alt="1" style="width:100%; height:100%;">
+                    </div>
+                    <div class="text-center " style="width: 100%;height: 13%;">
+                        <span class=" fs-4 mb-2">Bestsellers</span>
+                    </div>
+                </div>
+              </div>
+
+              <div class="  underline pointer flex-shrink-0 scroll-transform" style="height: 100%;width:19%;">
+                <div class="  w-100 h-100">
+                    <div class="d-flex justify-content-center" style="width: 100%;height: 85%;">
+                        <img src="./images/slide3.webp" class="" alt="1" style="width:100%; height:100%;">
+                    </div>
+                    <div class="text-center " style="width: 100%;height: 13%;">
+                        <span class=" fs-4 mb-2">Men</span>
+                    </div>
+                </div>
+              </div>
+
+              <div class="  underline pointer flex-shrink-0 scroll-transform" style="height: 100%;width:19%;">
+                <div class="  w-100 h-100">
+                    <div class="d-flex justify-content-center" style="width: 100%;height: 85%;">
+                        <img src="./images/slide4.webp" class="" alt="1" style="width:100%; height:100%;">
+                    </div>
+                    <div class="text-center " style="width: 100%;height: 13%;">
+                        <span class=" fs-4 mb-2">Women</span>
+                    </div>
+                </div>
+              </div>
+
+              <div class="  underline pointer flex-shrink-0 scroll-transform" style="height: 100%;width:19%;">
+                <div class="  w-100 h-100">
+                    <div class="d-flex justify-content-center" style="width: 100%;height: 85%;">
+                        <img src="./images/slide5.webp" class="" alt="1" style="width:100%; height:100%;">
+                    </div>
+                    <div class="text-center " style="width: 100%;height: 13%;">
+                        <span class=" fs-4 mb-2">Kids</span>
+                    </div>
+                </div>
+              </div>
+
+              <div class="  underline pointer flex-shrink-0 scroll-transform" style="height: 100%;width:19%;">
+                <div class="  w-100 h-100">
+                    <div class="d-flex justify-content-center" style="width: 100%;height: 85%;">
+                        <img src="./images/slide7.webp" class="" alt="1" style="width:100%; height:100%;">
+                    </div>
+                    <div class="text-center " style="width: 100%;height: 13%;">
+                        <span class=" fs-4 mb-2">Couple</span>
+                    </div>
+                </div>
+              </div>
+
+              <div class="  underline pointer flex-shrink-0 scroll-transform" style="height: 100%;width:19%;">
+                <div class="  w-100 h-100">
+                    <div class="d-flex justify-content-center" style="width: 100%;height: 85%;">
+                        <img src="./images/slide8.jpg" class="" alt="1" style="width:100%; height:100%;">
+                    </div>
+                    <div class="text-center " style="width: 100%;height: 13%;">
+                        <span class=" fs-4 mb-2">New Arrival</span>
+                    </div>
+                </div>
+              </div>
+
+              <div class="  underline pointer flex-shrink-0 scroll-transform" style="height: 100%;width:19%;">
+                <div class="  w-100 h-100">
+                    <div class="d-flex justify-content-center" style="width: 100%;height: 85%;">
+                        <img src="./images/slide9.webp" class="" alt="1" style="width:100%; height:100%;">
+                    </div>
+                    <div class="text-center " style="width: 100%;height: 13%;">
+                        <span class=" fs-4 mb-2">Raga</span>
+                    </div>
+                </div>
+              </div>
+
+              <div class="  underline pointer flex-shrink-0 scroll-transform" style="height: 100%;width:19%;">
+                <div class="  w-100 h-100">
+                    <div class="d-flex justify-content-center" style="width: 100%;height: 85%;">
+                        <img src="./images/slide10.webp" class="" alt="1" style="width:100%; height:100%;">
+                    </div>
+                    <div class="text-center " style="width: 100%;height: 13%;">
+                        <span class=" fs-4 mb-2">Luxe</span>
+                    </div>
+                </div>
+              </div>
+
+              <div class="  underline pointer flex-shrink-0 scroll-transform" style="height: 100%;width:19%;">
+                <div class="  w-100 h-100">
+                    <div class="d-flex justify-content-center" style="width: 100%;height: 85%;">
+                        <img src="./images/slide11.webp" class="" alt="1" style="width:100%; height:100%;">
+                    </div>
+                    <div class="text-center " style="width: 100%;height: 13%;">
+                        <span class=" fs-4 mb-2">Clocks</span>
+                    </div>
+                </div>
+              </div>
+              
+              <div class="  underline pointer flex-shrink-0 scroll-transform" style="height: 100%;width:19%;">
+                <div class="  w-100 h-100">
+                    <div class="d-flex justify-content-center" style="width: 100%;height: 85%;">
+                        <img src="./images/slide12.webp" class="" alt="1" style="width:100%; height:100%;">
+                    </div>
+                    <div class="text-center " style="width: 100%;height: 13%;">
+                        <span class=" fs-4 mb-2">Smart</span>
+                    </div>
+                </div>
+              </div>
+              
+              <div class=" underline pointer ms-2 flex-shrink-0 scroll-transform" style="height: 100%;width:19%;">
+                <div class="  w-100 h-100">
+                  <div class="d-flex justify-content-center" style="width: 100%;height: 85%;">
+                    <img src="./images/slide1.webp" class="" alt="1" style="width:100%; height:100%;">
+                  </div>
+                  <div class="text-center " style="width: 100%;height: 13%;">
+                    <span class=" fs-4 mb-2">Sale</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="  underline pointer flex-shrink-0 scroll-transform" style="height: 100%;width:19%;">
+                <div class="  w-100 h-100">
+                    <div class="d-flex justify-content-center" style="width: 100%;height: 85%;">
+                        <img src="./images/slide2.webp" class="" alt="1" style="width:100%; height:100%;">
+                    </div>
+                    <div class="text-center " style="width: 100%;height: 13%;">
+                        <span class=" fs-4 mb-2">Bestsellers</span>
+                    </div>
+                </div>
+              </div>
+
+              <div class="  underline pointer flex-shrink-0 scroll-transform" style="height: 100%;width:19%;">
+                <div class="  w-100 h-100">
+                    <div class="d-flex justify-content-center" style="width: 100%;height: 85%;">
+                        <img src="./images/slide3.webp" class="" alt="1" style="width:100%; height:100%;">
+                    </div>
+                    <div class="text-center " style="width: 100%;height: 13%;">
+                        <span class=" fs-4 mb-2">Men</span>
+                    </div>
+                </div>
+              </div>
+
+              <div class="  underline pointer flex-shrink-0 scroll-transform" style="height: 100%;width:19%;">
+                <div class="  w-100 h-100">
+                    <div class="d-flex justify-content-center" style="width: 100%;height: 85%;">
+                        <img src="./images/slide4.webp" class="" alt="1" style="width:100%; height:100%;">
+                    </div>
+                    <div class="text-center " style="width: 100%;height: 13%;">
+                        <span class=" fs-4 mb-2">Women</span>
+                    </div>
+                </div>
+              </div>
+
+              <div class="  underline pointer flex-shrink-0 scroll-transform" style="height: 100%;width:19%;">
+                <div class="  w-100 h-100">
+                    <div class="d-flex justify-content-center" style="width: 100%;height: 85%;">
+                        <img src="./images/slide5.webp" class="" alt="1" style="width:100%; height:100%;">
+                    </div>
+                    <div class="text-center " style="width: 100%;height: 13%;">
+                        <span class=" fs-4 mb-2">Kids</span>
+                    </div>
+                </div>
+              </div>
+
+              <div class="  underline pointer flex-shrink-0 scroll-transform" style="height: 100%;width:19%;">
+                <div class="  w-100 h-100">
+                    <div class="d-flex justify-content-center" style="width: 100%;height: 85%;">
+                        <img src="./images/slide7.webp" class="" alt="1" style="width:100%; height:100%;">
+                    </div>
+                    <div class="text-center " style="width: 100%;height: 13%;">
+                        <span class=" fs-4 mb-2">Couple</span>
+                    </div>
+                </div>
+              </div>
+
+              <div class="  underline pointer flex-shrink-0 scroll-transform" style="height: 100%;width:19%;">
+                <div class="  w-100 h-100">
+                    <div class="d-flex justify-content-center" style="width: 100%;height: 85%;">
+                        <img src="./images/slide8.jpg" class="" alt="1" style="width:100%; height:100%;">
+                    </div>
+                    <div class="text-center " style="width: 100%;height: 13%;">
+                        <span class=" fs-4 mb-2">New Arrival</span>
+                    </div>
+                </div>
+              </div>
+
+              <div class="  underline pointer flex-shrink-0 scroll-transform" style="height: 100%;width:19%;">
+                <div class="  w-100 h-100">
+                    <div class="d-flex justify-content-center" style="width: 100%;height: 85%;">
+                        <img src="./images/slide9.webp" class="" alt="1" style="width:100%; height:100%;">
+                    </div>
+                    <div class="text-center " style="width: 100%;height: 13%;">
+                        <span class=" fs-4 mb-2">Raga</span>
+                    </div>
+                </div>
+              </div>
+
+              <div class="  underline pointer flex-shrink-0 scroll-transform" style="height: 100%;width:19%;">
+                <div class="  w-100 h-100">
+                    <div class="d-flex justify-content-center" style="width: 100%;height: 85%;">
+                        <img src="./images/slide10.webp" class="" alt="1" style="width:100%; height:100%;">
+                    </div>
+                    <div class="text-center " style="width: 100%;height: 13%;">
+                        <span class=" fs-4 mb-2">Luxe</span>
+                    </div>
+                </div>
+              </div>
+
+              <div class="  underline pointer flex-shrink-0 scroll-transform" style="height: 100%;width:19%;">
+                <div class="  w-100 h-100">
+                    <div class="d-flex justify-content-center" style="width: 100%;height: 85%;">
+                        <img src="./images/slide11.webp" class="" alt="1" style="width:100%; height:100%;">
+                    </div>
+                    <div class="text-center " style="width: 100%;height: 13%;">
+                        <span class=" fs-4 mb-2">Clocks</span>
+                    </div>
+                </div>
+              </div>
+
+              <div class="  underline pointer flex-shrink-0 scroll-transform" style="height: 100%;width:19%;">
+                <div class="  w-100 h-100">
+                    <div class="d-flex justify-content-center" style="width: 100%;height: 85%;">
+                        <img src="./images/slide12.webp" class="" alt="1" style="width:100%; height:100%;">
+                    </div>
+                    <div class="text-center " style="width: 100%;height: 13%;">
+                        <span class=" fs-4 mb-2">Smart</span>
+                    </div>
+                </div>
+              </div>
+              
+              <div class=" underline pointer ms-2 flex-shrink-0 scroll-transform" style="height: 100%;width:19%;">
+                <div class="  w-100 h-100">
+                  <div class="d-flex justify-content-center" style="width: 100%;height: 85%;">
+                    <img src="./images/slide1.webp" class="" alt="1" style="width:100%; height:100%;">
+                  </div>
+                  <div class="text-center " style="width: 100%;height: 13%;">
+                    <span class=" fs-4 mb-2">Sale</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="  underline pointer flex-shrink-0 scroll-transform" style="height: 100%;width:19%;">
+                <div class="  w-100 h-100">
+                    <div class="d-flex justify-content-center" style="width: 100%;height: 85%;">
+                        <img src="./images/slide2.webp" class="" alt="1" style="width:100%; height:100%;">
+                    </div>
+                    <div class="text-center " style="width: 100%;height: 13%;">
+                        <span class=" fs-4 mb-2">Bestsellers</span>
+                    </div>
+                </div>
+              </div>
+
+              <div class="  underline pointer flex-shrink-0 scroll-transform" style="height: 100%;width:19%;">
+                <div class="  w-100 h-100">
+                    <div class="d-flex justify-content-center" style="width: 100%;height: 85%;">
+                        <img src="./images/slide3.webp" class="" alt="1" style="width:100%; height:100%;">
+                    </div>
+                    <div class="text-center " style="width: 100%;height: 13%;">
+                        <span class=" fs-4 mb-2">Men</span>
+                    </div>
+                </div>
+              </div>
+
+              <div class="  underline pointer flex-shrink-0 scroll-transform" style="height: 100%;width:19%;">
+                <div class="  w-100 h-100">
+                    <div class="d-flex justify-content-center" style="width: 100%;height: 85%;">
+                        <img src="./images/slide4.webp" class="" alt="1" style="width:100%; height:100%;">
+                    </div>
+                    <div class="text-center " style="width: 100%;height: 13%;">
+                        <span class=" fs-4 mb-2">Women</span>
+                    </div>
+                </div>
+              </div>
+
+              <div class="  underline pointer flex-shrink-0 scroll-transform" style="height: 100%;width:19%;">
+                <div class="  w-100 h-100">
+                    <div class="d-flex justify-content-center" style="width: 100%;height: 85%;">
+                        <img src="./images/slide5.webp" class="" alt="1" style="width:100%; height:100%;">
+                    </div>
+                    <div class="text-center " style="width: 100%;height: 13%;">
+                        <span class=" fs-4 mb-2">Kids</span>
+                    </div>
+                </div>
+              </div>
+
+              <div class="  underline pointer flex-shrink-0 scroll-transform" style="height: 100%;width:19%;">
+                <div class="  w-100 h-100">
+                    <div class="d-flex justify-content-center" style="width: 100%;height: 85%;">
+                        <img src="./images/slide7.webp" class="" alt="1" style="width:100%; height:100%;">
+                    </div>
+                    <div class="text-center " style="width: 100%;height: 13%;">
+                        <span class=" fs-4 mb-2">Couple</span>
+                    </div>
+                </div>
+              </div>
+
+              <div class="  underline pointer flex-shrink-0 scroll-transform" style="height: 100%;width:19%;">
+                <div class="  w-100 h-100">
+                    <div class="d-flex justify-content-center" style="width: 100%;height: 85%;">
+                        <img src="./images/slide8.jpg" class="" alt="1" style="width:100%; height:100%;">
+                    </div>
+                    <div class="text-center " style="width: 100%;height: 13%;">
+                        <span class=" fs-4 mb-2">New Arrival</span>
+                    </div>
+                </div>
+              </div>
+
+              <div class="  underline pointer flex-shrink-0 scroll-transform" style="height: 100%;width:19%;">
+                <div class="  w-100 h-100">
+                    <div class="d-flex justify-content-center" style="width: 100%;height: 85%;">
+                        <img src="./images/slide9.webp" class="" alt="1" style="width:100%; height:100%;">
+                    </div>
+                    <div class="text-center " style="width: 100%;height: 13%;">
+                        <span class=" fs-4 mb-2">Raga</span>
+                    </div>
+                </div>
+              </div>
+
+              <div class="  underline pointer flex-shrink-0 scroll-transform" style="height: 100%;width:19%;">
+                <div class="  w-100 h-100">
+                    <div class="d-flex justify-content-center" style="width: 100%;height: 85%;">
+                        <img src="./images/slide10.webp" class="" alt="1" style="width:100%; height:100%;">
+                    </div>
+                    <div class="text-center " style="width: 100%;height: 13%;">
+                        <span class=" fs-4 mb-2">Luxe</span>
+                    </div>
+                </div>
+              </div>
+
+              <div class="  underline pointer flex-shrink-0 scroll-transform" style="height: 100%;width:19%;">
+                <div class="  w-100 h-100">
+                    <div class="d-flex justify-content-center" style="width: 100%;height: 85%;">
+                        <img src="./images/slide11.webp" class="" alt="1" style="width:100%; height:100%;">
+                    </div>
+                    <div class="text-center " style="width: 100%;height: 13%;">
+                        <span class=" fs-4 mb-2">Clocks</span>
+                    </div>
+                </div>
+              </div>
+
+              <div class="  underline pointer flex-shrink-0 scroll-transform" style="height: 100%;width:19%;">
+                <div class="  w-100 h-100">
+                    <div class="d-flex justify-content-center" style="width: 100%;height: 85%;">
+                        <img src="./images/slide12.webp" class="" alt="1" style="width:100%; height:100%;">
+                    </div>
+                    <div class="text-center " style="width: 100%;height: 13%;">
+                        <span class=" fs-4 mb-2">Smart</span>
+                    </div>
+                </div>
+              </div>
+
+              <div class=" underline pointer ms-2 flex-shrink-0 scroll-transform" style="height: 100%;width:19%;">
+                <div class="  w-100 h-100">
+                  <div class="d-flex justify-content-center" style="width: 100%;height: 85%;">
+                    <img src="./images/slide1.webp" class="" alt="1" style="width:100%; height:100%;">
+                  </div>
+                  <div class="text-center " style="width: 100%;height: 13%;">
+                    <span class=" fs-4 mb-2">Sale</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="  underline pointer flex-shrink-0 scroll-transform" style="height: 100%;width:19%;">
+                <div class="  w-100 h-100">
+                    <div class="d-flex justify-content-center" style="width: 100%;height: 85%;">
+                        <img src="./images/slide2.webp" class="" alt="1" style="width:100%; height:100%;">
+                    </div>
+                    <div class="text-center " style="width: 100%;height: 13%;">
+                        <span class=" fs-4 mb-2">Bestsellers</span>
+                    </div>
+                </div>
+              </div>
+
+    </div>
+        </div>
+
+          <!-- scrollable slide section end -->
+        
+
+
+        <!-- shop by brands section start -->
+
+        <div class="brands w-100 pt-3" id="titan" >
+
+          <div class="  text-center p-4 cursor "><h3>SHOP BY BRANDS</h3></div>
+          <div class="   d-flex gap-4 px-5 mb-4 ">
+            <div class=" pointer " style="width:24%;"> <img class="card-transform" src="./images/brand1.jpg" alt="" style="width: 100%; height: 100%;" ></div>
+            <div class=" pointer " style="width:24%;" id="fasttrack"> <img class="card-transform" src="./images/brand2.jpg" alt="" style="width: 100%; height: 100%;" ></div>
+            <div class=" pointer " style="width:24%;" id="sonata"> <img class="card-transform" src="./images/brand.jpg" alt="" style="width: 100%; height: 100%;" ></div>
+            <div class=" pointer " style="width:24%;" id="tommy"> <img class="card-transform" src="./images/brand4.jpg" alt="" style="width: 100%; height: 100%;" ></div>
+          </div>
+          <div class="   d-flex gap-4 px-5 mb-4">
+            <div class=" pointer " style="width:24%;" id="cole"> <img class="card-transform" src="./images/brand5.jpg" alt="" style="width: 100%; height: 100%;" ></div>
+            <div class=" pointer " style="width:24%;" id="police"> <img class="card-transform" src="./images/brand6.jpg" alt="" style="width: 100%; height: 100%;" ></div>
+            <div class=" pointer " style="width:24%;" id="anne"> <img class="card-transform" src="./images/brand7.jpg" alt="" style="width: 100%; height: 100%;" ></div>
+            <div class=" pointer " style="width:24%;" > <img class="card-transform" src="./images/brand8.jpg" alt="" style="width: 100%; height: 100%;" ></div>
+          </div>
+          <div class="   d-flex gap-4 px-5">
+            <div class=" pointer " style="width:24%;" id="raga"> <img class="card-transform" src="./images/brand9.jpg" alt="" style="width: 100%; height: 100%;" ></div>
+            <div class=" pointer " style="width:24%;" > <img class="card-transform" src="./images/brand10.jpg" alt="" style="width: 100%; height: 100%;" ></div>
+            <div class=" pointer " style="width:24%;" > <img class="card-transform" src="./images/brand11.jpg" alt="" style="width: 100%; height: 100%;" ></div>
+            <div class=" pointer " style="width:24%;" > <img class="card-transform" src="./images/brand12.jpg" alt="" style="width: 100%; height: 100%;" ></div>
+          </div>
+          
+        </div>
+        
+        <!-- shop by brands section end -->
+        
+        
+        
+        
+        <!-- best seller section start -->
+ 
+        <div class="bestseller mt-4 " id="bestseller">
+          <div class="text-center p-4 cursor"><h3>Best Seller</h3></div>
+          <div class="p-4 d-flex gap-3 scroll-container">
+            
+            <div class=" card flex-shrink-0 scroll-transform card-transform card-transform pointer" style="width:250px;">
+              <div class="card border-0 bg-body-secondary position-relative p-3 h-100">
+                <i class="fa-regular fa-heart heart-icon"></i>
+                      <img src="./images/TITAN_MAIN.webp" class="card-img-top img-fluid" alt="Watch">
+                      <div class="card-body p-0 mt-3">
+                        <h6 class="card-title fw-semibold text-uppercase">Titan</h6>
+                        <h5 class="fw-bold">TI-4554GYM-8A</h5>
+                        <p class="mb-1 text-secondary small">MRP</p>
+                        <h5 class="fw-bold mb-0">₹ 11,995 <small class="text-muted fw-normal">(incl. of all taxes)</small></h5>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class=" card flex-shrink-0 card-transform pointer" style="width:250px;">
+                    <div class="card border-0 bg-body-secondary position-relative p-3 h-100">
+                      <i class="fa-regular fa-heart heart-icon"></i>
+                      <img src="./images/bs2.avif" class="card-img-top img-fluid" alt="Watch">
+                      <div class="card-body p-0 mt-3">
+                        <h6 class="card-title fw-semibold text-uppercase">Casio</h6>
+                        <h5 class="fw-bold">MTP-SN3KD-2A</h5>
+                        <p class="mb-1 text-secondary small">MRP</p>
+                        <h5 class="fw-bold mb-0">₹ 4,995 <small class="text-muted fw-normal">(incl. of all taxes)</small></h5>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class=" card flex-shrink-0 card-transform pointer" style="width:250px;">
+                      <div class="card border-0 bg-body-secondary position-relative p-3 h-100">
+                          <i class="fa-regular fa-heart heart-icon"></i>
+                          <img src="./images/bs8.avif" class="card-img-top img-fluid" alt="Watch">
+                          <div class="card-body p-0 mt-3">
+                            <h6 class="card-title fw-semibold text-uppercase">sheen</h6>
+                            <h5 class="fw-bold">SHE-4556PGL-7A</h5>
+                            <p class="mb-1 text-secondary small">MRP</p>
+                            <h5 class="fw-bold mb-0">₹ 10,995 <small class="text-muted fw-normal">(incl. of all taxes)</small></h5>
+                        </div>
+                      </div>
+                  </div>
+
+                  <div class=" card flex-shrink-0 card-transform pointer" style="width:250px;">
+                  <div class="card border-0 bg-body-secondary position-relative p-3 h-100">
+                      <i class="fa-regular fa-heart heart-icon"></i>
+                      <img src="./images/bs7.avif" class="card-img-top img-fluid" alt="Watch">
+                      <div class="card-body p-0 mt-3">
+                        <h6 class="card-title fw-semibold text-uppercase">Casio</h6>
+                        <h5 class="fw-bold">MTP-SN2KL-2A</h5>
+                        <p class="mb-1 text-secondary small">MRP</p>
+                        <h5 class="fw-bold mb-0">₹ 4,795 <small class="text-muted fw-normal">(incl. of all taxes)</small></h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class=" card flex-shrink-0 card-transform pointer" style="width:250px;">
+                      <div class="card border-0 bg-body-secondary position-relative p-3 h-100">
+                          <i class="fa-regular fa-heart heart-icon"></i>
+                          <img src="./images/sheen.avif" class="card-img-top img-fluid" alt="Watch">
+                          <div class="card-body p-0 mt-3">
+                            <h6 class="card-title fw-semibold text-uppercase">sheen</h6>
+                            <h5 class="fw-bold">SHE-4556PGL-7A</h5>
+                            <p class="mb-1 text-secondary small">MRP</p>
+                            <h5 class="fw-bold mb-0">₹ 8,995 <small class="text-muted fw-normal">(incl. of all taxes)</small></h5>
+                        </div>
+                      </div>
+                  </div>
+                  <div class=" card flex-shrink-0 card-transform pointer" style="width:250px;">
+                    <div class="card border-0 bg-body-secondary position-relative p-3 h-100">
+                      <i class="fa-regular fa-heart heart-icon"></i>
+                      <img src="./images/bs2.avif" class="card-img-top img-fluid" alt="Watch">
+                      <div class="card-body p-0 mt-3">
+                        <h6 class="card-title fw-semibold text-uppercase">casio</h6>
+                        <h5 class="fw-bold">EFV-610DE-3A</h5>
+                        <p class="mb-1 text-secondary small">MRP</p>
+                        <h5 class="fw-bold mb-0">₹ 8,795 <small class="text-muted fw-normal">(incl. of all taxes)</small></h5>
+                    </div>
+                  </div>
+              </div>
+              <div class=" card flex-shrink-0 card-transform pointer" style="width:250px;">
+                  <div class="card border-0 bg-body-secondary position-relative p-3 h-100">
+                      <i class="fa-regular fa-heart heart-icon"></i>
+                      <img src="./images/bs4.avif" class="card-img-top img-fluid" alt="Watch">
+                      <div class="card-body p-0 mt-3">
+                        <h6 class="card-title fw-semibold text-uppercase">Edifice</h6>
+                        <h5 class="fw-bold">EFB-109D-1AV</h5>
+                        <p class="mb-1 text-secondary small">MRP</p>
+                        <h5 class="fw-bold mb-0">₹ 10,795 <small class="text-muted fw-normal">(incl. of all taxes)</small></h5>
+                    </div>
+                  </div>
+              </div>
+              <div class=" card flex-shrink-0 card-transform pointer" style="width:250px;">
+                  <div class="card border-0 bg-body-secondary position-relative p-3 h-100">
+                      <i class="fa-regular fa-heart heart-icon"></i>
+                      <img src="./images/bs6.avif" class="card-img-top img-fluid" alt="Watch">
+                      <div class="card-body p-0 mt-3">
+                        <h6 class="card-title fw-semibold text-uppercase">PRO TREK</h6>
+                        <h5 class="fw-bold">PRW-6900Y-1</h5>
+                        <p class="mb-1 text-secondary small">MRP</p>
+                        <h5 class="fw-bold mb-0">₹ 10,795 <small class="text-muted fw-normal">(incl. of all taxes)</small></h5>
+                    </div>
+                  </div>
+              </div>
+              
+          </div>
+
+
+          </div>
+         
+
+        <!-- best seller section stop -->
+
+
+
+        <!-- policy section start -->
+
+        <div class="policy w-100 d-flex justify-content-center align-items-center  pb-3 mt-4" style="background-color: rgb(248, 241, 231);">
+          <div class=" h-100  me-3" style="width: 15%;">
+              <div class="w-100 d-flex align-items-center justify-content-center" style="height: 85%;"><img src="./images/Gurantee.svg" alt=""  style="width: 40%;height: 40%;"></div>
+              <div class="w-100 text-center" style="height:15%;"><span class="fw-bold fs-6 cursor">100% ORIGINAL</span></div>
+          </div>
+          <div class=" h-100 me-3" style="width: 15%;">
+              <div class="w-100 d-flex align-items-center justify-content-center" style="height: 85%;"><img src="./images/Return.svg" alt="" style="width: 40%;height: 40%;"></div>
+              <div class="w-100 text-center" style="height:15%;"><span class="fw-bold fs-6 cursor">7 DAY RETURN</span></div>
+          </div>
+          <div class=" h-100" style="width: 15%;">
+              <div class="w-100 d-flex align-items-center justify-content-center" style="height: 85%;"><img src="./images/Shipping.svg" alt="" style="width: 40%;height: 40%;"></div>
+              <div class="w-100 text-center" style="height:15%;"><span class="fw-bold fs-6 cursor">FREE SHIPPING</span></div>
+          </div>
+        </div>
+          <!-- policy section end -->
+
+
+
+          <!-- footer section start -->
+
+          <footer class="footer mt-5">
+            <div class="container py-5">
+              <div class="row text-start">
+
+                <div class="col-md-2 mb-4">
+                  <h5 class="text-uppercase mb-3 cursor">TILUS</h5>
+                  <p class="cursor">Your Perfect Watch Awaits. Discover the latest trends with confidence.</p>
+                </div>
+              
+                <div class="col-md-2 mb-4">
+                  <h6 class="mb-3 cursor">COLLECTIONS</h6>
+                  <ul class="list-unstyled">
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">Police Batman</a></li>
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">Casio</a></li>
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">Stellar</a></li>
+                    <li><a href="#"class="underline-white text-decoration-none mb-1">Raga Power Pearls</a></li>
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">Grandmaster</a></li>
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">Maritime</a></li>
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">Edifice</a></li>
+                  </ul>
+                </div>
+
+                <div class="col-md-2 mb-4">
+                  <h6 class="mb-3 cursor">CUSTOMER SERVICE</h6>
+                  <ul class="list-unstyled">
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">Payment Options</a></li>
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">Shipping & Returns</a></li>
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">Order Tracking</a></li>
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">Privacy Policy</a></li>
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">Encircle Program</a></li>
+                  </ul>
+                </div>
+  
+                <div class="col-md-2 mb-4">
+                  <h6 class="mb-3 cursor" >CONTACT US</h6>
+                  <ul class="list-unstyled">
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">1800-266-0123</a></li>
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">customercare@tilus.co.in</a></li>
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">Help & Contact</a></li>
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">FAQs</a></li>
+                  </ul>
+                </div>
+
+                <div class="col-md-2 mb-4">
+                  <h6 class="mb-3 cursor">ABOUT TILUS</h6>
+                  <ul class="list-unstyled">
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">Brand Protection</a></li>
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">Corporate</a></li>
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">Careers</a></li>
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">Blog</a></li>
+                  </ul>
+                </div>
+
+                
+                <div class="col-md-2 mb-4">
+                  <h5 class="cursor">Download Titan World App</h5>
+                  <div class="d-flex mb-4">
+                    <a href="https://www.apple.com/app-store/" class="me-2 transforms"><img src="./images/appstore.webp" alt=""></a>
+                    <a href="https://play.google.com/"><img class="transforms" src="./images/playstore.webp " alt="" style="width: 185%;"></a>
+                  </div>
+                  <h6 class="mb-3 cursor">Follow Us</h6>
+                  <a href="https://www.facebook.com/" class="me-2 "><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" width="24" alt="Facebook" class="transforms"></a>
+                  <a href="https://www.instagram.com/" class="me-2 "><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" width="24" alt="Instagram" class="transforms"></a>
+                  
+                
+                </div>
+              
+              </div>
+            
+              <hr class="border-light">
+            
+              <div class="text-center small text-light mt-3">
+                <!-- &copy; <span class="cursor">2025 TILUS. All rights reserved.</span> -->
+                
+                  &copy; <span class="cursor me-5">2025 TILUS. All rights reserved.</span>
+                  <img src="./images/payment-method.svg" alt="">
+                
+              </div>
+            </div>
+          </footer>
+
+          <!-- footer section end -->
+      
+  </div>
+
+</body>
+</html>

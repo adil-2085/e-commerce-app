@@ -1,0 +1,1605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TILUS</title>
+    <!-- bootstrap cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    
+    <!-- bootstrap js cdn link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- font awsome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- custom style link -->
+    <link rel="stylesheet" href="./style.css">
+
+
+</head>
+<body>
+  <div class="men-main border">
+
+      <div class="scroll-container bg-dark d-flex ">
+        <span class="scroll-content">SALE is Live! Use Code NEW10 and get 10% OFF* on non-discounted Watches </span>
+      </div>
+
+    <!-- nav bar section start -->
+
+        <nav class="navbar navbar-expand-lg bg-body-secondary" style="position: sticky; top: 0; z-index: 1050;">
+            <div class="container-fluid">
+              <i class="fa-brands fa-slack fa-2x me-2"></i>
+              <a href="./index.html" class="text-decoration-none text-dark pointer" ><h3 class="fw-bold me-auto">TILUS</h3></a>
+            
+              <!-- Mobile toggle -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          
+              <!-- Search + Icons -->
+              <div class="collapse navbar-collapse ms-3" id="navbarContent">
+                <form class="d-flex my-2 my-lg-0 flex-grow-1 me-lg-3 justify-content-center" >
+                  <input class="form-control me-2" type="search" placeholder="Search for vintage, classic and other watches" id="searchBox" style="width: 80%;">
+                  <button class="btn btn-outline-dark" type="submit">Search</button>
+                </form>
+            
+                <div class="d-flex text-center">
+                  <div class="me-3 underline transforms"><i class="bi bi-person fs-4"></i><p class="small m-0 cursor">Account</p></div>
+                  <div class="me-2 underline transforms"><i class="bi bi-heart fs-4"></i><p class="small m-0 cursor">Wishlist</p></div>
+                  <div class="px-2 underline transforms"><i class="bi bi-bag fs-4"></i><p class="small m-0 cursor">Cart</p></div>
+                  <div class="px-2 underline transforms"><i class="bi bi-box-seam fs-4"></i><p class="small m-0 cursor">Track</p></div>
+                </div>
+
+              </div>
+            </div>
+        </nav>
+        <!-- navbar section end -->
+
+
+
+
+        <!-- javascript for changing searchbar placeholders start -->
+        <script>
+        const searchBox = document.getElementById("searchBox");
+        
+        const searchPlaceholders = [
+          "Search products...",
+          "Search by name...",
+          "Search by category...",
+          "Search by price...",
+          "Search by brand..."
+        ];
+        
+        let i = 0;
+        
+        setInterval(() => {
+          i = (i + 1) % searchPlaceholders.length;
+          searchBox.placeholder = searchPlaceholders[i];
+        }, 3000);
+        </script>
+        <!-- javascript for changing searchbar placeholders end -->
+
+
+
+
+        <!-- menu section start -->
+
+        <div class="menu w-100 d-flex flex-wrap flex-md-nowrap justify-content-center gap-2 px-2 py-2 " style="white-space: nowrap;">
+
+
+
+            <div class="dropdown ">
+                <button class="btn dropdown-toggle border-0 transforms fw-bold" type="button" data-bs-toggle="dropdown">
+                 MEN 
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./product_list.html">View All</a></li>
+                    <li><a class="dropdown-item" href="#">New arrival</a></li>
+                    <li><a class="dropdown-item" href="#">Trending</a></li>
+                    <li><a class="dropdown-item" href="#">Shop By Looks</a></li>
+                    <li><a class="dropdown-item" href="#Availability">Shop By color</a></li>
+                    <li><a class="dropdown-item" href="#brand">Shop By brand</a></li>
+                    <li><a class="dropdown-item" href="#">Shop By collection</a></li>
+                    <li><a class="dropdown-item" href="#Price">Shop By price</a></li>
+                </ul>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn  dropdown-toggle border-0 transforms" type="button" data-bs-toggle="dropdown">
+                WOMEN
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">View All</a></li>
+                    <li><a class="dropdown-item" href="#">New arrival</a></li>
+                    <li><a class="dropdown-item" href="#">Trending</a></li>
+                    <li><a class="dropdown-item" href="#">Shop By Looks</a></li>
+                    <li><a class="dropdown-item" href="#">Shop By color</a></li>
+                    <li><a class="dropdown-item" href="#">Shop By brand</a></li>
+                    <li><a class="dropdown-item" href="#">Shop By collection</a></li>
+                    <li><a class="dropdown-item" href="#">Shop By price</a></li>
+                </ul>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn  dropdown-toggle border-0 transforms" type="button" data-bs-toggle="dropdown">
+                SMART WATCHES
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">View All</a></li>
+                    <li><a class="dropdown-item" href="#">New arrival</a></li>
+                    <li><a class="dropdown-item" href="#">Trending</a></li>
+                    <li><a class="dropdown-item" href="#">Shop By gender</a></li>
+                    <li><a class="dropdown-item" href="#">Shop By color</a></li>
+                    <li><a class="dropdown-item" href="#">Shop By brand</a></li>
+                    <li><a class="dropdown-item" href="#">Shop By collection</a></li>
+                    <li><a class="dropdown-item" href="#">Shop By price</a></li>
+                </ul>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn  dropdown-toggle border-0 transforms" type="button" data-bs-toggle="dropdown">
+                PREMIUM WATCHES
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">View All</a></li>
+                    <li><a class="dropdown-item" href="#">Trending</a></li>
+                    <li><a class="dropdown-item" href="#">XYLYS</a></li>
+                    <li><a class="dropdown-item" href="#">Nebula</a></li>
+                    <li><a class="dropdown-item" href="#">Edge</a></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="btn  dropdown-toggle border-0 transforms" type="button" data-bs-toggle="dropdown">
+                WATCHES
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">View All</a></li>
+                    <li><a class="dropdown-item" href="#">New Arrivals</a></li>
+                    <li><a class="dropdown-item" href="#bestseller">Bestsellers</a></li>
+                    <li><a class="dropdown-item" href="#">Trending</a></li>
+                    <li><a class="dropdown-item" href="#">Shop By Function</a></li>
+                    <li><a class="dropdown-item" href="#">Shop By Collection</a></li>
+                    <li><a class="dropdown-item" href="#">Shop By Strap</a></li>
+                    <li><a class="dropdown-item" href="#">Shop By Price</a></li>
+                    <li><a class="dropdown-item" href="#">Shop By Dial</a></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="btn  dropdown-toggle border-0 transforms" type="button" data-bs-toggle="dropdown">
+                INTERNATIONAL BRANDS
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#titan">View All</a></li>
+                    <li><a class="dropdown-item" href="#titan">New Arrivals</a></li>
+                    <li><a class="dropdown-item" href="#bestseller">Bestsellers</a></li>
+                    <li><a class="dropdown-item" href="#titan">Casio</a></li>
+                    <li><a class="dropdown-item" href="#titan">Cerruti</a></li>
+                    <li><a class="dropdown-item" href="#police">Police</a></li>
+                    <li><a class="dropdown-item" href="#tommy">Tommy Hilfiger</a></li>
+                    <li><a class="dropdown-item" href="#anne">Anne Klein</a></li>
+                    <li><a class="dropdown-item" href="#raga">Raga</a></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="btn  dropdown-toggle border-0transforms" type="button" data-bs-toggle="dropdown">
+                GIFTING
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Shop By Price</a></li>
+                    <li><a class="dropdown-item" href="#">Watches For Bride</a></li>
+                    <li><a class="dropdown-item" href="#">Watches For Groom</a></li>
+                    <li><a class="dropdown-item" href="#">Watches For Mothe</a></li>
+                    <li><a class="dropdown-item" href="#">Watches For Father</a></li>
+                    <li><a class="dropdown-item" href="#">Watches For Brother</a></li>
+                    <li><a class="dropdown-item" href="#">Watches For Sister</a></li>
+                    
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="btn  underline border-0 transforms" type="button" data-bs-toggle="dropdown" >
+                SALE
+                </button>
+            </div>
+            <div class="dropdown">
+                <button class="btn underline  border-0 transforms" type="button" data-bs-toggle="dropdown">
+                WATCH SERVICE
+                </button>
+            </div>
+            <div class="dropdown">
+                <button class="btn  border-0 dropdown-toggle transforms" type="button" data-bs-toggle="dropdown">
+                MORE
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./index.html">Back To Home</a></li>
+                  <li><a class="dropdown-item" href="./signup.html">Log out</a></li>
+                    <li><a class="dropdown-item" href="./login.html">Login with another account</a></li>
+                    <li><a class="dropdown-item" href="#">Kids Watches</a></li>
+                    <li><a class="dropdown-item" href="#">Couple Watches</a></li>
+                    <li><a class="dropdown-item" href="#">Watches For Groom</a></li>
+                    <li><a class="dropdown-item" href="#">Clocks</a></li>
+                    <li><a class="dropdown-item" href="#">Accessories</a></li>
+                    <li><a class="dropdown-item" href="#">E-Gift Card</a></li>
+                    <li><a class="dropdown-item" href="#">Our Brands</a></li>
+                    <li><a class="dropdown-item" href="#">Encircle</a></li>
+                    <li><a class="dropdown-item" href="#">Corporate Gifting</a></li>
+                    <li><a class="dropdown-item" href="#">Currency Selector</a></li>
+                    <li><a class="dropdown-item" href="#">Luxury Watches</a></li>
+                </ul>
+              </div>
+              
+        </div>
+            
+        <!-- menu section end -->
+
+
+
+        <!-- availability section start -->
+
+        <div class="w-100 text-center p-2" style="background-color: rgb(236, 226, 213);">
+          <a href="#" class="text-decoration-none text-dark "><i class="fa-solid fa-location-dot"></i>check availability location </a>
+
+        </div>
+
+        <!-- availability section end -->
+
+
+
+        <!-- main body section start -->
+        
+        <div class="main-body  mx-auto d-flex" style="width: 85%;" >
+          
+
+
+
+          <!-- aside section start -->
+          
+          <div class=" aside me-3" style="width: 16%; overflow-y: scroll; height: 100vh;scrollbar-width: none; position: sticky ; top: 0;">
+            
+                
+                <nav aria-label="breadcrumb" style="position: sticky; top: 0; ">
+                    <ol class="breadcrumb bg-white px-0">
+                        <li class="breadcrumb-item"><a class="text-dark  text-decoration-none" href="#">Home</a></li>
+                        <li class="breadcrumb-item active fw-bold" aria-current="page">Men</li>
+                    </ol>
+                </nav>
+
+                
+              
+                <!-- Sort By -->
+                <div class="mb-3">
+                    <div class="dropdown">
+                        <button class="btn btn-outline-dark border-0 dropdown-toggle w-100" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="fw-bold">SORT BY:</span> <span class="fw-light">Best Sellers</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" onclick="setSort('Best Sellers')">Best Sellers</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="setSort('Price: Low to High')">Price: Low to High</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="setSort('Price: High to Low')">Price: High to Low</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="setSort('New Arrivals')">New Arrivals</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="setSort('New Arrivals')">Popularity</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="setSort('New Arrivals')">Discount</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="setSort('New Arrivals')">Tilus Recommends</a></li>
+                        </ul>
+                    </div>
+                </div>
+              
+                <!-- Filter By -->
+                <div class="filter-heading mb-3">
+                    <span class="ms-2 fw-bolder"><i class="bi bi-sliders me-1"></i> Filter By</span>
+                    <span class="clear-all me-2">CLEAR ALL</span>
+                </div>
+              
+                
+              
+                <!-- Price  -->
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between pointer underline" data-bs-toggle="collapse" href="#Price">
+                        <span class="fw-semibold">Price</span>
+                        <span>+</span>
+                    </div>
+                    <div class="collapse mt-2" id="Price">
+                        <div class="d-flex align-items-center mt-2 w-100">
+                            ₹ <input type="number" class="price-input" id="minPrice" value="499"> 
+                            <span class="mx-2">To</span>
+                            ₹ <input type="number" class="price-input" id="maxPrice" value="800000">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Strap Material -->
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between underline" data-bs-toggle="collapse" href="#strapMaterial">
+                        <span class="fw-semibold">Strap Material</span>
+                        <span>+</span>
+                    </div>
+                    <div class="collapse mt-2" id="strapMaterial">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Leather" id="strapLeather">
+                            <label class="form-check-label" for="strapLeather">Bimetal (2)</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="Metal" id="strapMetal">
+                          <label class="form-check-label" for="strapMetal">18 Karat Gold (5)</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="Leather" id="strapLeather">
+                          <label class="form-check-label" for="strapLeather">Plastic (174)</label>
+                      </div>
+                      <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="Leather" id="strapLeather">
+                          <label class="form-check-label" for="strapLeather">Silicone (136)</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Leather" id="strapLeather">
+                        <label class="form-check-label" for="strapLeather">Leather (731)</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Leather" id="strapLeather">
+                        <label class="form-check-label" for="strapLeather">Ceramic (25)</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Leather" id="strapLeather">
+                        <label class="form-check-label" for="strapLeather">Fabric (4)</label>
+                      </div>
+                    </div>
+                    </div>
+                    
+                <!-- Brands -->
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between underline" data-bs-toggle="collapse" href="#brands">
+                        <span class="fw-semibold">Brands</span>
+                        <span>+</span>
+                    </div>
+                    <div class="collapse mt-2" id="brands">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Titan (751)" id="brandTitan">
+                            <label class="form-check-label" for="brandTitan">Titan</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Titan" id="brandTitan">
+                            <label class="form-check-label" for="brandTitan">Casio (630)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Fastrack (462)" id="brandFastrack">
+                            <label class="form-check-label" for="brandFastrack">Fastrack</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Titan" id="brandTitan">
+                            <label class="form-check-label" for="brandTitan">Sonata (462)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Titan" id="brandTitan">
+                            <label class="form-check-label" for="brandTitan">Tommy Hilfiger (149)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Titan" id="brandTitan">
+                            <label class="form-check-label" for="brandTitan">SF (146)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Titan" id="brandTitan">
+                            <label class="form-check-label" for="brandTitan">Police (121)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Titan" id="brandTitan">
+                            <label class="form-check-label" for="brandTitan">Kenneth Cole (114)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Titan" id="brandTitan">
+                            <label class="form-check-label" for="brandTitan">Xylys (61)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Titan" id="brandTitan">
+                            <label class="form-check-label" for="brandTitan">Nebula (58)</label>
+                        </div>                        
+                    </div>
+                </div>
+              
+                <!-- Strap Color -->
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between underline" data-bs-toggle="collapse" href="#strapColor">
+                        <span class="fw-semibold">Strap Color</span>
+                        <span>+</span>
+                    </div>
+                    <div class="collapse mt-2" id="strapColor">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Black" id="colorBlack">
+                            <label class="form-check-label" for="colorBlack">Black (668)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Brown" id="colorBrown">
+                            <label class="form-check-label" for="colorBrown">White (4)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Brown" id="colorBrown">
+                            <label class="form-check-label" for="colorBrown">Blue (216)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Brown" id="colorBrown">
+                            <label class="form-check-label" for="colorBrown">Green (70)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Brown" id="colorBrown">
+                            <label class="form-check-label" for="colorBrown">Grey (99)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Brown" id="colorBrown">
+                            <label class="form-check-label" for="colorBrown">Golden (195)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Brown" id="colorBrown">
+                            <label class="form-check-label" for="colorBrown">Silver (318) </label>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Discounts -->
+                <div class="mb-3">
+                  <div class="d-flex justify-content-between underline" data-bs-toggle="collapse" href="#discounts">
+                    <span class="fw-semibold">Discounts</span>
+                    <span>+</span>
+                  </div>
+                  <div class="collapse mt-2" id="discounts">
+                    <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="10%" id="discount10">
+                            <label class="form-check-label" for="discount10">Upto 10% Off (304)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="20%" id="discount20">
+                            <label class="form-check-label" for="discount20">10% - 20% Off (596)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="20%" id="discount20">
+                            <label class="form-check-label" for="discount20">20% - 30% Off (258)</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="20%" id="discount20">
+                            <label class="form-check-label" for="discount20">30% - 40% Off (68)</label>
+                          </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="20%" id="discount20">
+                            <label class="form-check-label" for="discount20">40% - 50% Off (68)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="20%" id="discount20">
+                            <label class="form-check-label" for="discount20">50% - 60% Off (26)</label>
+                          </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="20%" id="discount20">
+                            <label class="form-check-label" for="discount20">60% - 70% Off (13)</label>
+                          </div>
+                    </div>
+                </div>
+                
+                
+                <!-- Function -->
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between underline" data-bs-toggle="collapse" href="#function">
+                        <span class="fw-semibold">Function</span>
+                        <span>+</span>
+                    </div>
+                    <div class="collapse mt-2" id="function">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Chronograph" id="funcChrono">
+                            <label class="form-check-label" for="funcChrono">Analog (1,210)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">World Time (3)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Multifunction (440)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Digital (74)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Ana-Digi (65)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Analog Dual Time (2)</label>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <!-- Collection -->
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between underline" data-bs-toggle="collapse" href="#Collection">
+                        <span class="fw-semibold">Collection</span>
+                        <span>+</span>
+                      </div>
+                    <div class="collapse mt-2" id="Collection">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="Chronograph" id="funcChrono">
+                            <label class="form-check-label" for="funcChrono">After Dark (13)</label>
+                          </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">All Nighters (7)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Ana Digi (4)</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                          <label class="form-check-label" for="funcAnalog">Art Deco (1)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Aspire (41)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Athleisure (1)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Automatics (14)</label>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <!-- Dial Color -->
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between underline" data-bs-toggle="collapse" href="#DialColor">
+                        <span class="fw-semibold">Dial Color</span>
+                        <span>+</span>
+                    </div>
+                    <div class="collapse mt-2" id="DialColor">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Black" id="colorBlack">
+                            <label class="form-check-label" for="colorBlack">Black (668)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Brown" id="colorBrown">
+                            <label class="form-check-label" for="colorBrown">White (4)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Brown" id="colorBrown">
+                            <label class="form-check-label" for="colorBrown">Blue (216)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Brown" id="colorBrown">
+                            <label class="form-check-label" for="colorBrown">Green (70)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Brown" id="colorBrown">
+                            <label class="form-check-label" for="colorBrown">Grey (99)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Brown" id="colorBrown">
+                            <label class="form-check-label" for="colorBrown">Golden (195)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Brown" id="colorBrown">
+                            <label class="form-check-label" for="colorBrown">Silver (318) </label>
+                        </div>
+                    </div>
+                </div>
+              
+                <!-- Dial Shape -->
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between underline" data-bs-toggle="collapse" href="#DialShape">
+                        <span class="fw-semibold">Dial Shape</span>
+                        <span>+</span>
+                    </div>
+                    <div class="collapse mt-2" id="DialShape">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Chronograph" id="funcChrono">
+                            <label class="form-check-label" for="funcChrono">Octagon (3)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Special (73)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Anatome (5)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Rectangle (2)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Rectangular (105)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Round (2,008)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Shaped (41)</label>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+              
+                <!--  Dial Size -->
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between underline" data-bs-toggle="collapse" href="#DialSize">
+                        <span class="fw-semibold"> Dial Size</span>
+                        <span>+</span>
+                    </div>
+                    <div class="collapse mt-2" id="DialSize">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Chronograph" id="funcChrono">
+                            <label class="form-check-label" for="funcChrono">20.70 mm (3)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">25.10 mm (7)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">25.40 mm (6)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">25.80 mm (8)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">25 mm (2)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">26.29 mm (1)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">27.40 mm (4)</label>
+                        </div>
+                        
+                    </div>
+                </div>
+              
+                <!-- Movement -->
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between underline" data-bs-toggle="collapse" href="#Movement">
+                        <span class="fw-semibold">Movement</span>
+                        <span>+</span>
+                    </div>
+                    <div class="collapse mt-2" id="Movement">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Chronograph" id="funcChrono">
+                            <label class="form-check-label" for="funcChrono">Automatic (110)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Self Winding (9)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Digital (74)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Mechanical (6)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Hand Wound (5)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Micromotor (5)</label>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+              
+                <!-- Display Type -->
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between underline" data-bs-toggle="collapse" href="#DisplayType">
+                        <span class="fw-semibold">Display Type</span>
+                        <span>+</span>
+                    </div>
+                    <div class="collapse mt-2" id="DisplayType">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Chronograph" id="funcChrono">
+                            <label class="form-check-label" for="funcChrono">AMOLED (68)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Super AMOLED (4)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">TFT (3)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">UltraVU TFT (2)</label>
+                        </div>
+                    </div>
+                </div>
+              
+                <!-- Special Features -->
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between underline" data-bs-toggle="collapse" href="#Features">
+                        <span class="fw-semibold">Special Features</span>
+                        <span>+</span>
+                    </div>
+                    <div class="collapse mt-2" id="Features">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Chronograph" id="funcChrono">
+                            <label class="form-check-label" for="funcChrono">Accelerometer (77)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Activity Tracker (77)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Alarm Clock (77)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Always On Display (65)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Audio Recording (4)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Calander (60)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Camera (3)</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Screen Size -->
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between underline" data-bs-toggle="collapse" href="#ScreenSize">
+                        <span class="fw-semibold">Screen Size</span>
+                        <span>+</span>
+                    </div>
+                    <div class="collapse mt-2" id="ScreenSize">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Chronograph" id="funcChrono">
+                            <label class="form-check-label" for="funcChrono">3.35 CM (3)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">3.50 cm (1)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">3.63 CM (16)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">3.63 cm (16)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">3.6 CM (1)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">3.6 cm (5)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">3.8 cm (4)</label>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+              
+                <!-- Sport Type -->
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between underline" data-bs-toggle="collapse" href="#SportType">
+                        <span class="fw-semibold">Sport Type</span>
+                        <span>+</span>
+                    </div>
+                    <div class="collapse mt-2" id="SportType">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Chronograph" id="funcChrono">
+                            <label class="form-check-label" for="funcChrono">Badminton (10)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Basketball (10)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Climbing (10)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Cycling (77)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Diving (13)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Fishing (13)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Fitness (77)</label>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+              
+                <!-- Bluetooth Version -->
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between underline" data-bs-toggle="collapse" href="#BluetoothVersion">
+                        <span class="fw-semibold">Bluetooth Version</span>
+                        <span>+</span>
+                    </div>
+                    <div class="collapse mt-2" id="BluetoothVersion">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Chronograph" id="funcChrono">
+                            <label class="form-check-label" for="funcChrono">5.2 (16)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">5.3 (25)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">V5.3 (33)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">v5.3 (5)</label>
+                        </div>
+                    </div>
+                </div>
+      
+                <!-- Battery Capacity -->
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between underline" data-bs-toggle="collapse" href="#BatteryCapacity">
+                        <span class="fw-semibold">Battery Capacity</span>
+                        <span>+</span>
+                    </div>
+                    <div class="collapse mt-2" id="BatteryCapacity">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Chronograph" id="funcChrono">
+                            <label class="form-check-label" for="funcChrono">270mAh (4)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">280 mAh (5)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">300mAh (6)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">300 mAh (47)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">350 mAh (13)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">360 mAh (4)</label>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Availability -->
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between underline" data-bs-toggle="collapse" href="#Availability">
+                        <span class="fw-semibold">Availability</span>
+                        <span>+</span>
+                    </div>
+                    <div class="collapse mt-2" id="Availability">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Chronograph" id="funcChrono">
+                            <label class="form-check-label" for="funcChrono">Include Out of stock</label>
+                        </div>
+                        
+                    </div>
+                </div>
+              
+              
+          </div>
+          
+          <!-- aside section end -->
+          
+
+
+          <!-- hero section start -->
+             
+
+
+          <div class="men_hero " style="width: 82% ;">
+              
+              <!-- hero menu section start -->
+              
+            <div class="  d-flex justify-content-center w-100"  >
+                  <button class=" men_hero_btn p-2 underline ">Sale</button>
+                  <button class=" men_hero_btn  underline">Bestsellers</button>
+                  <button class=" men_hero_btn  underline">Analog Watches</button>
+                  <button class=" men_hero_btn  underline">Smart Watches</button>
+                  <button class=" men_hero_btn  underline">New Arrivals</button>
+                  <button class=" men_hero_btn  underline">men</button>
+              <button class=" men_hero_btn  underline">women</button>
+            </div>                        
+            <!-- hero menu section end -->
+            
+
+            <!-- hero top image section start -->
+
+            <div class="hero_top_image pt-3" style="background-color: rgb(255, 255, 255);">
+
+                <div class="heading d-flex p-4">
+
+                    <img src="./images/skmei_logo.jpg" alt="" class="" style="width: 15%;">
+                    <span class="fw-semibold fs-5 ms-3 mb-3">SKMEI Wheels Rolling Watches For Men</span>
+                    
+
+
+                </div>
+                <div class="d-flex">
+                    <img src="./images/skmei.jpg" alt="" width="50%">
+
+                  <div class=" card flex-shrink-0 card-transform pointer ms-3" style="width:16%;">
+                      <div class="card border-0  position-relative p-3 h-100">
+                          <i class="fa-regular fa-heart heart-icon"></i>
+                          <img src="./images/skmei1.jpg" class="card-img-top" alt="Watch">
+                          <div class="card-body p-0 mt-3">
+                               <span  class="card-title fw-semibold text-uppercase d-block">Skmei</span>
+                               <div class=" border rounded-4" style="width: 45%;"><span class="ms-2">4.5</span><img src="./images/star.svg" alt="" class="mb-1 ms-1"></div>
+                               <span  class="fw-semibold">Car Wheel Watch</span>
+                               <span class="mb-1 text-secondary small">MRP</span>
+                               <span class="fw-semibold mb-0">₹ 4,995 <small class="text-muted fw-normal">(incl. of all taxes)</small></span>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class=" card flex-shrink-0 card-transform pointer ms-1" style="width:16%;">
+                      <div class="card border-0  position-relative p-3 h-100">
+                          <i class="fa-regular fa-heart heart-icon"></i>
+                          <img src="./images/skmei3.jpg" class="card-img-top" alt="Watch">
+                          <div class="card-body p-0 mt-3">
+                               <span  class="card-title fw-semibold text-uppercase d-block">Skmei</span>
+                               <div class=" border rounded-4" style="width: 45%;"><span class="ms-2">4.5</span><img src="./images/star.svg" alt="" class="mb-1 ms-1"></div>
+                               <span  class="fw-semibold">Car Wheel Watch</span>
+                               <span class="mb-1 text-secondary small">MRP</span>
+                               <span class="fw-semibold mb-0">₹ 4,995 <small class="text-muted fw-normal">(incl. of all taxes)</small></span>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class=" card flex-shrink-0 card-transform pointer ms-1" style="width:16%;">
+                      <div class="card border-0  position-relative p-3 h-100">
+                          <i class="fa-regular fa-heart heart-icon"></i>
+                          <img src="./images/skmei2.jpg" class="card-img-top" alt="Watch">
+                          <div class="card-body p-0 mt-3">
+                               <span  class="card-title fw-semibold text-uppercase d-block">Skmei</span>
+                               <div class=" border rounded-4" style="width: 45%;"><span class="ms-2">4.5</span><img src="./images/star.svg" alt="" class="mb-1 ms-1"></div>
+                               <span  class="fw-semibold">Car Wheel Watch</span>
+                               <span class="mb-1 text-secondary small">MRP</span>
+                               <span class="fw-semibold mb-0">₹ 4,995 <small class="text-muted fw-normal">(incl. of all taxes)</small></span>
+                          </div>
+                      </div>
+                  </div>
+
+                </div>
+
+
+
+            </div>
+            
+            <!-- hero top image section end -->
+            
+            <!-- recomended for you section start -->
+
+            <div class=" mt-3 pb-4" style="background-color:#e8f2ff;">
+
+                <div class=" px-3 py-4">
+                    <span class="fw-bold fs-4 ">Recommended for you</span>
+                </div>
+                <div class="ps-3 d-flex w-100" style="overflow-x: scroll; scrollbar-width: none;">
+
+                  <div class=" card flex-shrink-0 card-transform pointer me-3" style="width:250px;">
+                    <div class="card border-0 bg-body-white position-relative p-2 h-100">
+                      <i class="fa-regular fa-heart heart-icon"></i>
+                      <img src="./images/TITAN_MAIN.webp" class="card-img-top img-fluid" alt="Watch">
+                      <div class="card-body p-0 ">
+                        <h6 class="card-title fw-semibold text-uppercase">TITAN</h6>
+                        <div class=" border rounded-4" style="width: 30%;"><span class="ms-3">4.5</span><img src="./images/star.svg" alt="" class="mb-1 ms-1"></div>
+                        <h5 class="fw-bold">TI-4554GYM-8A</h5>
+                        <p class="mb-1 text-secondary small">MRP</p>
+                        <h5 class="fw-bold mb-0">₹ 11,995 <small class="text-muted fw-normal">(incl. of all taxes)</small></h5>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class=" card flex-shrink-0 card-transform pointer me-3" style="width:250px;">
+                    <div class="card border-0 bg-body-white position-relative p-2 h-100">
+                      <i class="fa-regular fa-heart heart-icon"></i>
+                      <img src="./images/bs4.avif" class="card-img-top img-fluid" alt="Watch">
+                      <div class="card-body p-0 ">
+                        <h6 class="card-title fw-semibold text-uppercase">Edifice</h6>
+                        <div class=" border rounded-4" style="width: 30%;"><span class="ms-3">4.5</span><img src="./images/star.svg" alt="" class="mb-1 ms-1"></div>
+                        <h5 class="fw-bold">EFB-109D-1AV</h5>
+                        <p class="mb-1 text-secondary small">MRP</p>
+                        <h5 class="fw-bold mb-0">₹ 10,795 <small class="text-muted fw-normal">(incl. of all taxes)</small></h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class=" card flex-shrink-0 card-transform pointer me-3" style="width:250px;">
+                    <div class="card border-0 bg-body-white position-relative p-2 h-100">
+                      <i class="fa-regular fa-heart heart-icon"></i>
+                      <img src="./images/bs6.avif" class="card-img-top img-fluid" alt="Watch">
+                      <div class="card-body p-0 ">
+                        <h6 class="card-title fw-semibold text-uppercase">PRO TREK</h6>
+                        <div class=" border rounded-4" style="width: 30%;"><span class="ms-3">4.5</span><img src="./images/star.svg" alt="" class="mb-1 ms-1"></div>
+                        <h5 class="fw-bold">PRW-6900Y-1</h5>
+                        <p class="mb-1 text-secondary small">MRP</p>
+                        <h5 class="fw-bold mb-0">₹ 10,795<small class="text-muted fw-normal">(incl. of all taxes)</small></h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class=" card flex-shrink-0 card-transform pointer me-3" style="width:250px;">
+                      <div class="card border-0 bg-body-white position-relative p-2 h-100">
+                          <i class="fa-regular fa-heart heart-icon"></i>
+                          <img src="./images/bs7.avif" class="card-img-top img-fluid" alt="Watch">
+                          <div class="card-body p-0 ">
+                              <h6 class="card-title fw-semibold text-uppercase">Casio</h6>
+                              <div class=" border rounded-4" style="width: 30%;"><span class="ms-3">4.5</span><img src="./images/star.svg" alt="" class="mb-1 ms-1"></div>
+                              <h5 class="fw-bold">MTP-SN2KL-2A</h5>
+                              <p class="mb-1 text-secondary small">MRP</p>
+                              <h5 class="fw-bold mb-0">₹ 8,795 <small class="text-muted fw-normal">(incl. of all taxes)</small></h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" card flex-shrink-0 card-transform pointer me-3" style="width:250px;">
+                      <div class="card border-0 bg-body-white position-relative p-2 h-100">
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                        <img src="./images/bs1.webp" class="card-img-top img-fluid" alt="Watch">
+                        <div class="card-body p-0 ">
+                          <h6 class="card-title fw-semibold text-uppercase">Titan</h6>
+                          <div class=" border rounded-4" style="width: 30%;"><span class="ms-3">4.5</span><img src="./images/star.svg" alt="" class="mb-1 ms-1"></div>
+                          <h5 class="fw-bold">TI-4554GYM-8A</h5>
+                          <p class="mb-1 text-secondary small">MRP</p>
+                          <h5 class="fw-bold mb-0">₹ 11,995 <small class="text-muted fw-normal">(incl. of all taxes)</small></h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class=" card flex-shrink-0 card-transform pointer me-3" style="width:250px;">
+                      <div class="card border-0 bg-body-white position-relative p-2 h-100">
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                        <img src="./images/sheen.avif" class="card-img-top img-fluid" alt="Watch">
+                        <div class="card-body p-0 ">
+                          <h6 class="card-title fw-semibold text-uppercase">sheen</h6>
+                          <div class=" border rounded-4" style="width: 30%;"><span class="ms-3">4.5</span><img src="./images/star.svg" alt="" class="mb-1 ms-1"></div>
+                          <h5 class="fw-bold">SHE-4556PGL-7A</h5>
+                          <p class="mb-1 text-secondary small">MRP</p>
+                          <h5 class="fw-bold mb-0">₹ 7,995 <small class="text-muted fw-normal">(incl. of all taxes)</small></h5>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  
+
+                </div>
+
+            </div>
+
+            <!-- recomended for you section end -->
+
+            <!-- hero image 2 section start -->
+            <div class="w-100 mt-3">
+                <img src="./images/top_men.webp" alt="" class="w-100">
+            </div>    
+            <!-- hero image 2 section end -->
+
+
+
+
+
+            <!-- product card section start -->
+
+            <div class=" mt-3">
+
+                <div class=" d-flex justify-content-center p-2 ">
+
+                    <div class=" card flex-shrink-0 card-transform pointer me-3" style="width:250px;">
+                      <div class="card border-0 bg-body-white position-relative p-2 h-100">
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                        <img src="./images/bs1.webp" class="card-img-top img-fluid" alt="Watch">
+                        <div class="card-body p-0 ">
+                          <h6 class="card-title fw-semibold text-uppercase">Titan</h6>
+                          <div class=" border rounded-4" style="width: 30%;"><span class="ms-3">4.5</span><img src="./images/star.svg" alt="" class="mb-1 ms-1"></div>
+                          <h5 class="fw-bold">TI-4554GYM-8A</h5>
+                          <p class="mb-1 text-secondary small">MRP</p>
+                          <h5 class="fw-bold mb-0">₹ 11,995 <small class="text-muted fw-normal">(incl. of all taxes)</small></h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class=" card flex-shrink-0 card-transform pointer me-3" style="width:250px;">
+                      <div class="card border-0 bg-body-white position-relative p-2 h-100">
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                        <img src="./images/card3.webp" class="card-img-top img-fluid" alt="Watch">
+                        <div class="card-body p-0 ">
+                          <h6 class="card-title fw-semibold text-uppercase">Tommy Hilfiger</h6>
+                          <div class=" border rounded-4" style="width: 30%;"><span class="ms-3">4.2</span><img src="./images/star.svg" alt="" class="mb-1 ms-1"></div>
+                          <h5 class="fw-bold">TH-3254Gnh-8A</h5>
+                          <p class="mb-1 text-secondary small">MRP</p>
+                          <h5 class="fw-bold mb-0">₹ 5,995 <small class="text-muted fw-normal">(incl. of all taxes)</small></h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class=" card flex-shrink-0 card-transform pointer me-3" style="width:250px;">
+                      <div class="card border-0 bg-body-white position-relative p-2 h-100">
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                        <img src="./images/card1.webp" class="card-img-top img-fluid" alt="Watch">
+                        <div class="card-body p-0 ">
+                          <h6 class="card-title fw-semibold text-uppercase">Titan</h6>
+                          <div class=" border rounded-4" style="width: 30%;"><span class="ms-3">4.1</span><img src="./images/star.svg" alt="" class="mb-1 ms-1"></div>
+                          <h5 class="fw-bold">TI-2085GHYM-6A</h5>
+                          <p class="mb-1 text-secondary small">MRP</p>
+                          <h5 class="fw-bold mb-0">₹ 7,995 <small class="text-muted fw-normal">(incl. of all taxes)</small></h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class=" card flex-shrink-0 card-transform pointer me-3" style="width:250px;">
+                      <div class="card border-0 bg-body-white position-relative p-2 h-100">
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                        <img src="./images/card5.webp" class="card-img-top img-fluid" alt="Watch">
+                        <div class="card-body p-0 ">
+                          <h6 class="card-title fw-semibold text-uppercase">Tommy Hilfiger</h6>
+                          <div class=" border rounded-4" style="width: 30%;"><span class="ms-3">4.4</span><img src="./images/star.svg" alt="" class="mb-1 ms-1"></div>
+                          <h5 class="fw-bold">TH-4825SUD-8A</h5>
+                          <p class="mb-1 text-secondary small">MRP</p>
+                          <h5 class="fw-bold mb-0">₹ 9,795 <small class="text-muted fw-normal">(incl. of all taxes)</small></h5>
+                        </div>
+                      </div>
+                    </div>
+
+                </div>
+                <div class=" d-flex justify-content-center p-2">
+
+                    <div class=" card flex-shrink-0 card-transform pointer me-3" style="width:250px;">
+                      <div class="card border-0 bg-body-white position-relative p-2 h-100">
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                        <img src="./images/card6.webp" class="card-img-top img-fluid" alt="Watch">
+                        <div class="card-body p-0 ">
+                          <h6 class="card-title fw-semibold text-uppercase">police</h6>
+                          <div class=" border rounded-4" style="width: 30%;"><span class="ms-3">4.1</span><img src="./images/star.svg" alt="" class="mb-1 ms-1"></div>
+                          <h5 class="fw-bold">PS-4364JGU-5A</h5>
+                          <p class="mb-1 text-secondary small">MRP</p>
+                          <h5 class="fw-bold mb-0">₹ 12,995 <small class="text-muted fw-normal">(incl. of all taxes)</small></h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class=" card flex-shrink-0 card-transform pointer me-3" style="width:250px;">
+                      <div class="card border-0 bg-body-white position-relative p-2 h-100">
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                        <img src="./images/card7.webp" class="card-img-top img-fluid" alt="Watch">
+                        <div class="card-body p-0 ">
+                          <h6 class="card-title fw-semibold text-uppercase">KENNETH COLE</h6>
+                          <div class=" border rounded-4" style="width: 30%;"><span class="ms-3">4.3</span><img src="./images/star.svg" alt="" class="mb-1 ms-1"></div>
+                          <h5 class="fw-bold">KC-3957JFB-8A</h5>
+                          <p class="mb-1 text-secondary small">MRP</p>
+                          <h5 class="fw-bold mb-0">₹ 15,995 <small class="text-muted fw-normal">(incl. of all taxes)</small></h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class=" card flex-shrink-0 card-transform pointer me-3" style="width:250px;">
+                      <div class="card border-0 bg-body-white position-relative p-2 h-100">
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                        <img src="./images/card8.webp" class="card-img-top img-fluid" alt="Watch">
+                        <div class="card-body p-0 ">
+                          <h6 class="card-title fw-semibold text-uppercase">Titan</h6>
+                          <div class=" border rounded-4" style="width: 30%;"><span class="ms-3">4.3</span><img src="./images/star.svg" alt="" class="mb-1 ms-1"></div>
+                          <h5 class="fw-bold">TI-2580DUM-6A</h5>
+                          <p class="mb-1 text-secondary small">MRP</p>
+                          <h5 class="fw-bold mb-0">₹ 9,995 <small class="text-muted fw-normal">(incl. of all taxes)</small></h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class=" card flex-shrink-0 card-transform pointer me-3" style="width:250px;">
+                      <div class="card border-0 bg-body-white position-relative p-2 h-100">
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                        <img src="./images/card9.webp" class="card-img-top img-fluid" alt="Watch">
+                        <div class="card-body p-0 ">
+                          <h6 class="card-title fw-semibold text-uppercase">POLICE</h6>
+                          <div class=" border rounded-4" style="width: 30%;"><span class="ms-3">4.2</span><img src="./images/star.svg" alt="" class="mb-1 ms-1"></div>
+                          <h5 class="fw-bold">TH-4825SUD-8A</h5>
+                          <p class="mb-1 text-secondary small">MRP</p>
+                          <h5 class="fw-bold mb-0">₹ 13,795 <small class="text-muted fw-normal">(incl. of all taxes)</small></h5>
+                        </div>
+                      </div>
+                    </div>
+
+                </div>
+                <div class=" d-flex justify-content-center p-2">
+
+                    <div class=" card flex-shrink-0 card-transform pointer me-3" style="width:250px;">
+                      <div class="card border-0 bg-body-white position-relative p-2 h-100">
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                        <img src="./images/card10.webp" class="card-img-top img-fluid" alt="Watch">
+                        <div class="card-body p-0 ">
+                          <h6 class="card-title fw-semibold text-uppercase">TOMMY HILFIGER</h6>
+                          <div class=" border rounded-4" style="width: 30%;"><span class="ms-3">4.1</span><img src="./images/star.svg" alt="" class="mb-1 ms-1"></div>
+                          <h5 class="fw-bold">TH-4364JGU-5A</h5>
+                          <p class="mb-1 text-secondary small">MRP</p>
+                          <h5 class="fw-bold mb-0">₹ 8,995 <small class="text-muted fw-normal">(incl. of all taxes)</small></h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class=" card flex-shrink-0 card-transform pointer me-3" style="width:250px;">
+                      <div class="card border-0 bg-body-white position-relative p-2 h-100">
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                        <img src="./images/card11.webp" class="card-img-top img-fluid" alt="Watch">
+                        <div class="card-body p-0 ">
+                          <h6 class="card-title fw-semibold text-uppercase">POLICE</h6>
+                          <div class=" border rounded-4" style="width: 30%;"><span class="ms-3">4.3</span><img src="./images/star.svg" alt="" class="mb-1 ms-1"></div>
+                          <h5 class="fw-bold">PC-3787KAB-8A</h5>
+                          <p class="mb-1 text-secondary small">MRP</p>
+                          <h5 class="fw-bold mb-0">₹ 11,995 <small class="text-muted fw-normal">(incl. of all taxes)</small></h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class=" card flex-shrink-0 card-transform pointer me-3" style="width:250px;">
+                      <div class="card border-0 bg-body-white position-relative p-2 h-100">
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                        <img src="./images/card12.webp" class="card-img-top img-fluid" alt="Watch">
+                        <div class="card-body p-0 ">
+                          <h6 class="card-title fw-semibold text-uppercase">KENNETH COLE</h6>
+                          <div class=" border rounded-4" style="width: 30%;"><span class="ms-3">4.3</span><img src="./images/star.svg" alt="" class="mb-1 ms-1"></div>
+                          <h5 class="fw-bold">KC-6768DFM-6A</h5>
+                          <p class="mb-1 text-secondary small">MRP</p>
+                          <h5 class="fw-bold mb-0">₹ 10,995 <small class="text-muted fw-normal">(incl. of all taxes)</small></h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class=" card flex-shrink-0 card-transform pointer me-3" style="width:250px;">
+                      <div class="card border-0 bg-body-white position-relative p-2 h-100">
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                        <img src="./images/card13.webp" class="card-img-top img-fluid" alt="Watch">
+                        <div class="card-body p-0 ">
+                          <h6 class="card-title fw-semibold text-uppercase">ANNE KELIN</h6>
+                          <div class=" border rounded-4" style="width: 30%;"><span class="ms-3">4.2</span><img src="./images/star.svg" alt="" class="mb-1 ms-1"></div>
+                          <h5 class="fw-bold">AK-4865BDD-8A</h5>
+                          <p class="mb-1 text-secondary small">MRP</p>
+                          <h5 class="fw-bold mb-0">₹ 15,795 <small class="text-muted fw-normal">(incl. of all taxes)</small></h5>
+                        </div>
+                      </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <!-- product card section end -->
+            
+            
+            <!-- hero image 3 section start -->
+            <div class="w-100 mt-3">
+                <img src="./images/bottom2.webp" alt="" class="w-100">
+            </div>    
+            
+            <!-- hero section end -->
+            
+            <!-- product card section start -->
+            
+            <div class=" mt-3">
+                
+                <div class=" d-flex justify-content-center p-2 ">
+                    
+                    <div class=" card flex-shrink-0 card-transform pointer me-3" style="width:250px;">
+                        <div class="card border-0 bg-body-white position-relative p-2 h-100">
+                            <i class="fa-regular fa-heart heart-icon"></i>
+                            <img src="./images/bs1.webp" class="card-img-top img-fluid" alt="Watch">
+                            <div class="card-body p-0 ">
+                                <h6 class="card-title fw-semibold text-uppercase">Titan</h6>
+                                <div class=" border rounded-4" style="width: 30%;"><span class="ms-3">4.5</span><img src="./images/star.svg" alt="" class="mb-1 ms-1"></div>
+                                <h5 class="fw-bold">TI-4554GYM-8A</h5>
+                                <p class="mb-1 text-secondary small">MRP</p>
+                                <h5 class="fw-bold mb-0">₹ 11,995 <small class="text-muted fw-normal">(incl. of all taxes)</small></h5>
+                            </div>
+                  </div>
+                </div>
+
+                <div class=" card flex-shrink-0 card-transform pointer me-3" style="width:250px;">
+                  <div class="card border-0 bg-body-white position-relative p-2 h-100">
+                    <i class="fa-regular fa-heart heart-icon"></i>
+                    <img src="./images/card3.webp" class="card-img-top img-fluid" alt="Watch">
+                    <div class="card-body p-0 ">
+                        <h6 class="card-title fw-semibold text-uppercase">Tommy Hilfiger</h6>
+                        <div class=" border rounded-4" style="width: 30%;"><span class="ms-3">4.2</span><img src="./images/star.svg" alt="" class="mb-1 ms-1"></div>
+                        <h5 class="fw-bold">TH-3254Gnh-8A</h5>
+                        <p class="mb-1 text-secondary small">MRP</p>
+                      <h5 class="fw-bold mb-0">₹ 5,995 <small class="text-muted fw-normal">(incl. of all taxes)</small></h5>
+                    </div>
+                  </div>
+                </div>
+
+                <div class=" card flex-shrink-0 card-transform pointer me-3" style="width:250px;">
+                  <div class="card border-0 bg-body-white position-relative p-2 h-100">
+                      <i class="fa-regular fa-heart heart-icon"></i>
+                    <img src="./images/card1.webp" class="card-img-top img-fluid" alt="Watch">
+                    <div class="card-body p-0 ">
+                        <h6 class="card-title fw-semibold text-uppercase">Titan</h6>
+                      <div class=" border rounded-4" style="width: 30%;"><span class="ms-3">4.1</span><img src="./images/star.svg" alt="" class="mb-1 ms-1"></div>
+                      <h5 class="fw-bold">TI-2085GHYM-6A</h5>
+                      <p class="mb-1 text-secondary small">MRP</p>
+                      <h5 class="fw-bold mb-0">₹ 7,995 <small class="text-muted fw-normal">(incl. of all taxes)</small></h5>
+                    </div>
+                </div>
+            </div>
+            
+                <div class=" card flex-shrink-0 card-transform pointer me-3" style="width:250px;">
+                    <div class="card border-0 bg-body-white position-relative p-2 h-100">
+                    <i class="fa-regular fa-heart heart-icon"></i>
+                    <img src="./images/card5.webp" class="card-img-top img-fluid" alt="Watch">
+                    <div class="card-body p-0 ">
+                      <h6 class="card-title fw-semibold text-uppercase">Tommy Hilfiger</h6>
+                      <div class=" border rounded-4" style="width: 30%;"><span class="ms-3">4.4</span><img src="./images/star.svg" alt="" class="mb-1 ms-1"></div>
+                      <h5 class="fw-bold">TH-4825SUD-8A</h5>
+                      <p class="mb-1 text-secondary small">MRP</p>
+                      <h5 class="fw-bold mb-0">₹ 9,795 <small class="text-muted fw-normal">(incl. of all taxes)</small></h5>
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+            <div class=" d-flex justify-content-center p-2">
+                
+                <div class=" card flex-shrink-0 card-transform pointer me-3" style="width:250px;">
+                  <div class="card border-0 bg-body-white position-relative p-2 h-100">
+                      <i class="fa-regular fa-heart heart-icon"></i>
+                    <img src="./images/card6.webp" class="card-img-top img-fluid" alt="Watch">
+                    <div class="card-body p-0 ">
+                      <h6 class="card-title fw-semibold text-uppercase">police</h6>
+                      <div class=" border rounded-4" style="width: 30%;"><span class="ms-3">4.1</span><img src="./images/star.svg" alt="" class="mb-1 ms-1"></div>
+                      <h5 class="fw-bold">PS-4364JGU-5A</h5>
+                      <p class="mb-1 text-secondary small">MRP</p>
+                      <h5 class="fw-bold mb-0">₹ 12,995 <small class="text-muted fw-normal">(incl. of all taxes)</small></h5>
+                    </div>
+                  </div>
+                </div>
+
+                <div class=" card flex-shrink-0 card-transform pointer me-3" style="width:250px;">
+                  <div class="card border-0 bg-body-white position-relative p-2 h-100">
+                    <i class="fa-regular fa-heart heart-icon"></i>
+                    <img src="./images/card7.webp" class="card-img-top img-fluid" alt="Watch">
+                    <div class="card-body p-0 ">
+                        <h6 class="card-title fw-semibold text-uppercase">KENNETH COLE</h6>
+                      <div class=" border rounded-4" style="width: 30%;"><span class="ms-3">4.3</span><img src="./images/star.svg" alt="" class="mb-1 ms-1"></div>
+                      <h5 class="fw-bold">KC-3957JFB-8A</h5>
+                      <p class="mb-1 text-secondary small">MRP</p>
+                      <h5 class="fw-bold mb-0">₹ 15,995 <small class="text-muted fw-normal">(incl. of all taxes)</small></h5>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class=" card flex-shrink-0 card-transform pointer me-3" style="width:250px;">
+                  <div class="card border-0 bg-body-white position-relative p-2 h-100">
+                    <i class="fa-regular fa-heart heart-icon"></i>
+                    <img src="./images/card8.webp" class="card-img-top img-fluid" alt="Watch">
+                    <div class="card-body p-0 ">
+                        <h6 class="card-title fw-semibold text-uppercase">Titan</h6>
+                        <div class=" border rounded-4" style="width: 30%;"><span class="ms-3">4.3</span><img src="./images/star.svg" alt="" class="mb-1 ms-1"></div>
+                      <h5 class="fw-bold">TI-2580DUM-6A</h5>
+                      <p class="mb-1 text-secondary small">MRP</p>
+                      <h5 class="fw-bold mb-0">₹ 9,995 <small class="text-muted fw-normal">(incl. of all taxes)</small></h5>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class=" card flex-shrink-0 card-transform pointer me-3" style="width:250px;">
+                    <div class="card border-0 bg-body-white position-relative p-2 h-100">
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                        <img src="./images/card9.webp" class="card-img-top img-fluid" alt="Watch">
+                    <div class="card-body p-0 ">
+                        <h6 class="card-title fw-semibold text-uppercase">POLICE</h6>
+                        <div class=" border rounded-4" style="width: 30%;"><span class="ms-3">4.2</span><img src="./images/star.svg" alt="" class="mb-1 ms-1"></div>
+                      <h5 class="fw-bold">TH-4825SUD-8A</h5>
+                      <p class="mb-1 text-secondary small">MRP</p>
+                      <h5 class="fw-bold mb-0">₹ 13,795 <small class="text-muted fw-normal">(incl. of all taxes)</small></h5>
+                    </div>
+                  </div>
+                </div>
+                
+            </div>
+            <div class=" d-flex justify-content-center p-2">
+                
+                <div class=" card flex-shrink-0 card-transform pointer me-3" style="width:250px;">
+                    <div class="card border-0 bg-body-white position-relative p-2 h-100">
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                    <img src="./images/card10.webp" class="card-img-top img-fluid" alt="Watch">
+                    <div class="card-body p-0 ">
+                        <h6 class="card-title fw-semibold text-uppercase">TOMMY HILFIGER</h6>
+                      <div class=" border rounded-4" style="width: 30%;"><span class="ms-3">4.1</span><img src="./images/star.svg" alt="" class="mb-1 ms-1"></div>
+                      <h5 class="fw-bold">TH-4364JGU-5A</h5>
+                      <p class="mb-1 text-secondary small">MRP</p>
+                      <h5 class="fw-bold mb-0">₹ 8,995 <small class="text-muted fw-normal">(incl. of all taxes)</small></h5>
+                    </div>
+                </div>
+                </div>
+
+                <div class=" card flex-shrink-0 card-transform pointer me-3" style="width:250px;">
+                    <div class="card border-0 bg-body-white position-relative p-2 h-100">
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                    <img src="./images/card11.webp" class="card-img-top img-fluid" alt="Watch">
+                    <div class="card-body p-0 ">
+                      <h6 class="card-title fw-semibold text-uppercase">POLICE</h6>
+                      <div class=" border rounded-4" style="width: 30%;"><span class="ms-3">4.3</span><img src="./images/star.svg" alt="" class="mb-1 ms-1"></div>
+                      <h5 class="fw-bold">PC-3787KAB-8A</h5>
+                      <p class="mb-1 text-secondary small">MRP</p>
+                      <h5 class="fw-bold mb-0">₹ 11,995 <small class="text-muted fw-normal">(incl. of all taxes)</small></h5>
+                    </div>
+                  </div>
+                </div>
+
+                <div class=" card flex-shrink-0 card-transform pointer me-3" style="width:250px;">
+                    <div class="card border-0 bg-body-white position-relative p-2 h-100">
+                    <i class="fa-regular fa-heart heart-icon"></i>
+                    <img src="./images/card12.webp" class="card-img-top img-fluid" alt="Watch">
+                    <div class="card-body p-0 ">
+                        <h6 class="card-title fw-semibold text-uppercase">KENNETH COLE</h6>
+                      <div class=" border rounded-4" style="width: 30%;"><span class="ms-3">4.3</span><img src="./images/star.svg" alt="" class="mb-1 ms-1"></div>
+                      <h5 class="fw-bold">KC-6768DFM-6A</h5>
+                      <p class="mb-1 text-secondary small">MRP</p>
+                      <h5 class="fw-bold mb-0">₹ 10,995 <small class="text-muted fw-normal">(incl. of all taxes)</small></h5>
+                    </div>
+                </div>
+                </div>
+
+                <div class=" card flex-shrink-0 card-transform pointer me-3" style="width:250px;">
+                    <div class="card border-0 bg-body-white position-relative p-2 h-100">
+                    <i class="fa-regular fa-heart heart-icon"></i>
+                    <img src="./images/card13.webp" class="card-img-top img-fluid" alt="Watch">
+                    <div class="card-body p-0 ">
+                        <h6 class="card-title fw-semibold text-uppercase">ANNE KELIN</h6>
+                        <div class=" border rounded-4" style="width: 30%;"><span class="ms-3">4.2</span><img src="./images/star.svg" alt="" class="mb-1 ms-1"></div>
+                        <h5 class="fw-bold">AK-4865BDD-8A</h5>
+                      <p class="mb-1 text-secondary small">MRP</p>
+                      <h5 class="fw-bold mb-0">₹ 15,795 <small class="text-muted fw-normal">(incl. of all taxes)</small></h5>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+            
+
+            </div>
+        
+        </div>
+        <!-- product card section end -->
+        
+        
+    </div>
+
+        <!-- main body section end -->
+        
+  
+        
+        
+        <!-- footer section start -->
+        
+          <footer class="footer mt-1">
+            <div class="container py-5">
+              <div class="row text-start">
+
+                <div class="col-md-2 mb-4">
+                  <h5 class="text-uppercase mb-3 cursor">TILUS</h5>
+                  <p class="cursor">Your Perfect Watch Awaits. Discover the latest trends with confidence.</p>
+                </div>
+              
+                <div class="col-md-2 mb-4">
+                  <h6 class="mb-3 cursor">COLLECTIONS</h6>
+                  <ul class="list-unstyled">
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">Police Batman</a></li>
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">Casio</a></li>
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">Stellar</a></li>
+                    <li><a href="#"class="underline-white text-decoration-none mb-1">Raga Power Pearls</a></li>
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">Grandmaster</a></li>
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">Maritime</a></li>
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">Edifice</a></li>
+                  </ul>
+                </div>
+
+                <div class="col-md-2 mb-4">
+                  <h6 class="mb-3 cursor">CUSTOMER SERVICE</h6>
+                  <ul class="list-unstyled">
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">Payment Options</a></li>
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">Shipping & Returns</a></li>
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">Order Tracking</a></li>
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">Privacy Policy</a></li>
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">Encircle Program</a></li>
+                  </ul>
+                </div>
+  
+                <div class="col-md-2 mb-4">
+                  <h6 class="mb-3 cursor" >CONTACT US</h6>
+                  <ul class="list-unstyled">
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">1800-266-0123</a></li>
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">customercare@tilus.co.in</a></li>
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">Help & Contact</a></li>
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">FAQs</a></li>
+                  </ul>
+                </div>
+
+                <div class="col-md-2 mb-4">
+                  <h6 class="mb-3 cursor">ABOUT TILUS</h6>
+                  <ul class="list-unstyled">
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">Brand Protection</a></li>
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">Corporate</a></li>
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">Careers</a></li>
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">Blog</a></li>
+                  </ul>
+                </div>
+
+                
+                <div class="col-md-2 mb-4">
+                  <h5 class="cursor">Download Titan World App</h5>
+                  <div class="d-flex mb-4">
+                    <a href="https://www.apple.com/app-store/" class="me-2 transforms"><img src="./images/appstore.webp" alt=""></a>
+                    <a href="https://play.google.com/"><img class="transforms" src="./images/playstore.webp " alt="" style="width: 185%;"></a>
+                  </div>
+                  <h6 class="mb-3 cursor">Follow Us</h6>
+                  <a href="https://www.facebook.com/" class="me-2 "><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" width="24" alt="Facebook" class="transforms"></a>
+                  <a href="https://www.instagram.com/" class="me-2 "><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" width="24" alt="Instagram" class="transforms"></a>
+                  
+                
+                </div>
+              
+              </div>
+            
+              <hr class="border-light">
+            
+              <div class="text-center small text-light mt-3">
+                <!-- &copy; <span class="cursor">2025 TILUS. All rights reserved.</span> -->
+                
+                  &copy; <span class="cursor me-5">2025 TILUS. All rights reserved.</span>
+                  <img src="./images/payment-method.svg" alt="">
+                
+              </div>
+            </div>
+          </footer>
+
+          <!-- footer section end -->
+
+
+  </div>
+  
+</body>

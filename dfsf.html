@@ -1,0 +1,285 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TILUS-test</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+  <style>
+   .scroll-container {
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+
+.scroll-content {
+  display: flex;
+  gap: 20px;
+  animation: scroll 15s linear infinite;
+}
+
+.item {
+  min-width: 200px;
+  height: 150px;
+  background: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  border-radius: 10px;
+}
+
+/* Animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+  </style>
+</head>
+<body>
+
+
+ <!-- <div class=" border ms-5  underline pointer" style="height: 300px;width:22%;">
+                <div class="  w-100 h-100">
+                    <div class="d-flex justify-content-center" style="width: 100%;height: 87%;">
+                        <img src="./images/slide1.webp" class="" alt="1" style="width:100%; height:100%;">
+                    </div>
+                    <div class="text-center " style="width: 100%;height: 13%;">
+                        <span class=" fs-4 mb-2">Sale</span>
+                    </div>
+                </div>
+              </div> -->
+
+
+
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-secondary">
+    <div class="container-fluid">
+      <i class="fa-brands fa-slack fa-2x me-2"></i>
+      <h3 class="fw-bold me-auto">TILUS</h3>
+
+      <!-- Mobile toggle -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Search + Icons -->
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <form class="d-flex my-2 my-lg-0 flex-grow-1 me-lg-3">
+          <input class="form-control me-2" type="search" placeholder="Search for vintage, classic and other watches">
+          <button class="btn btn-outline-dark" type="submit">Search</button>
+        </form>
+
+        <div class="d-flex text-center">
+          <div class="px-2">
+            <i class="bi bi-person fs-4"></i>
+            <p class="small m-0">Account</p>
+          </div>
+          <div class="px-2">
+            <i class="bi bi-heart fs-4"></i>
+            <p class="small m-0">Wishlist</p>
+          </div>
+          <div class="px-2">
+            <i class="bi bi-bag fs-4"></i>
+            <p class="small m-0">Cart</p>
+          </div>
+          <div class="px-2">
+            <i class="bi bi-box-seam fs-4"></i>
+            <p class="small m-0">Track</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Menu -->
+  <!-- Responsive Horizontal Scroll Menu -->
+<div class="menu w-100 d-flex flex-wrap flex-md-nowrap justify-content-center gap-2 overflow-auto px-2 py-2" style="white-space: nowrap;">
+  
+  <!-- MEN -->
+  <div class="dropdown underline">
+    <button class="dropdown-toggle border-0" type="button" data-bs-toggle="dropdown">
+      MEN
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">View All</a></li>
+      <li><a class="dropdown-item" href="#">New arrival</a></li>
+      <li><a class="dropdown-item" href="#">Trending</a></li>
+      <li><a class="dropdown-item" href="#">Shop By Looks</a></li>
+      <li><a class="dropdown-item" href="#">Shop By color</a></li>
+      <li><a class="dropdown-item" href="#">Shop By brand</a></li>
+      <li><a class="dropdown-item" href="#">Shop By collection</a></li>
+      <li><a class="dropdown-item" href="#">Shop By price</a></li>
+    </ul>
+  </div>
+
+  <!-- WOMEN -->
+  <div class="dropdown">
+    <button class="btn btn-outline-dark dropdown-toggle border-0" type="button" data-bs-toggle="dropdown">
+      WOMEN
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">View All</a></li>
+      <li><a class="dropdown-item" href="#">New arrival</a></li>
+      <li><a class="dropdown-item" href="#">Trending</a></li>
+      <li><a class="dropdown-item" href="#">Shop By Looks</a></li>
+      <li><a class="dropdown-item" href="#">Shop By color</a></li>
+      <li><a class="dropdown-item" href="#">Shop By brand</a></li>
+      <li><a class="dropdown-item" href="#">Shop By collection</a></li>
+      <li><a class="dropdown-item" href="#">Shop By price</a></li>
+    </ul>
+  </div>
+
+  <!-- KIDS -->
+  <div class="dropdown">
+    <button class="btn btn-outline-dark dropdown-toggle border-0" type="button" data-bs-toggle="dropdown">
+      KIDS
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">View All</a></li>
+      <li><a class="dropdown-item" href="#">New arrival</a></li>
+      <li><a class="dropdown-item" href="#">Trending</a></li>
+      <li><a class="dropdown-item" href="#">Shop By Looks</a></li>
+      <li><a class="dropdown-item" href="#">Shop By color</a></li>
+      <li><a class="dropdown-item" href="#">Shop By brand</a></li>
+      <li><a class="dropdown-item" href="#">Shop By collection</a></li>
+      <li><a class="dropdown-item" href="#">Shop By price</a></li>
+    </ul>
+  </div>
+
+  <!-- BEAUTY -->
+  <div class="dropdown">
+    <button class="btn btn-outline-dark dropdown-toggle border-0" type="button" data-bs-toggle="dropdown">
+      BEAUTY
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">View All</a></li>
+      <li><a class="dropdown-item" href="#">New arrival</a></li>
+      <li><a class="dropdown-item" href="#">Trending</a></li>
+      <li><a class="dropdown-item" href="#">Makeup</a></li>
+      <li><a class="dropdown-item" href="#">Skincare</a></li>
+      <li><a class="dropdown-item" href="#">Fragrance</a></li>
+      <li><a class="dropdown-item" href="#">Haircare</a></li>
+    </ul>
+  </div>
+
+  <!-- FOOTWEAR -->
+  <div class="dropdown">
+    <button class="btn btn-outline-dark dropdown-toggle border-0" type="button" data-bs-toggle="dropdown">
+      FOOTWEAR
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">View All</a></li>
+      <li><a class="dropdown-item" href="#">Sneakers</a></li>
+      <li><a class="dropdown-item" href="#">Casual Shoes</a></li>
+      <li><a class="dropdown-item" href="#">Formal Shoes</a></li>
+      <li><a class="dropdown-item" href="#">Sports Shoes</a></li>
+      <li><a class="dropdown-item" href="#">Sandals</a></li>
+    </ul>
+  </div>
+
+  <!-- ACCESSORIES -->
+  <div class="dropdown">
+    <button class="btn btn-outline-dark dropdown-toggle border-0" type="button" data-bs-toggle="dropdown">
+      ACCESSORIES
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">View All</a></li>
+      <li><a class="dropdown-item" href="#">Bags</a></li>
+      <li><a class="dropdown-item" href="#">Belts</a></li>
+      <li><a class="dropdown-item" href="#">Watches</a></li>
+      <li><a class="dropdown-item" href="#">Jewellery</a></li>
+    </ul>
+  </div>
+
+</div>
+    <!-- Add remaining dropdowns here -->
+  </div>
+
+  <!-- Carousel -->
+  <div id="autoCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./images/rolex main.avif" class="d-block w-100 img-fluid" alt="Slide 1">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/raymond main.avif" class="d-block w-100 img-fluid" alt="Slide 2">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#autoCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#autoCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- Fixed Image -->
+  <div class="container my-4">
+    <img src="./images/nebula.webp" class="img-fluid w-100" alt="Nebula">
+  </div>
+
+  <!-- Two Images -->
+  <div class="container my-4">
+    <div class="row g-3">
+      <div class="col-md-6">
+        <img src="./images/buy_part1.webp" class="img-fluid w-100" alt="">
+      </div>
+      <div class="col-md-6">
+        <img src="./images/buy_part2.webp" class="img-fluid w-100" alt="">
+      </div>
+    </div>
+  </div>
+
+  <!-- Offer Carousel -->
+  <div class="container my-5">
+    <div id="offerCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/offer1.png" class="d-block w-100 img-fluid" alt="Offer 1">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/offer2.jpg" class="d-block w-100 img-fluid" alt="Offer 2">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#offerCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#offerCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+<!-- <div class="w-100">
+            <div class="slider-wrapper">
+              <div class="slider-track">
+
+                <div class=" border" style="width: 80px; height: 120px;">
+                <img src="./images/slide1.webp" class="img-fluid" alt="1">
+                <span>Sale</span>
+                </div>
+
+              </div>
+            </div>
+         </div> -->

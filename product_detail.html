@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>detail</title>
+    <!-- bootstrap cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    
+    <!-- bootstrap js cdn link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- font awsome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- custom style link -->
+    <link rel="stylesheet" href="./style.css">
+
+
+</head>
+<body>
+  <div class="men-main border">
+
+      <div class="scroll-container bg-dark d-flex ">
+        <span class="scroll-content">SALE is Live! Use Code NEW10 and get 10% OFF* on non-discounted Watches </span>
+      </div>
+
+    <!-- nav bar section start -->
+
+        <nav class="navbar navbar-expand-lg bg-body-secondary" style="position: sticky; top: 0; z-index: 1050;">
+            <div class="container-fluid">
+              <i class="fa-brands fa-slack fa-2x me-2"></i>
+              <a href="./index.html" class="text-decoration-none text-dark pointer" ><h3 class="fw-bold me-auto">TILUS</h3></a>
+            
+              <!-- Mobile toggle -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          
+              <!-- Search + Icons -->
+              <div class="collapse navbar-collapse ms-3" id="navbarContent">
+                <form class="d-flex my-2 my-lg-0 flex-grow-1 me-lg-3 justify-content-center" >
+                  <input class="form-control me-2" type="search" placeholder="Search for vintage, classic and other watches" id="searchBox" style="width: 80%;">
+                  <button class="btn btn-outline-dark" type="submit">Search</button>
+                </form>
+            
+                <div class="d-flex text-center">
+                  <div class="me-3 underline transforms"><i class="bi bi-person fs-4"></i><p class="small m-0 cursor">Account</p></div>
+                  <div class="me-2 underline transforms"><i class="bi bi-heart fs-4"></i><p class="small m-0 cursor">Wishlist</p></div>
+                  <div class="px-2 underline transforms"><i class="bi bi-bag fs-4"></i><p class="small m-0 cursor">Cart</p></div>
+                  <div class="px-2 underline transforms"><i class="bi bi-box-seam fs-4"></i><p class="small m-0 cursor">Track</p></div>
+                </div>
+
+              </div>
+            </div>
+        </nav>
+        <!-- navbar section end -->
+
+
+
+
+        <!-- javascript for changing searchbar placeholders start -->
+        <script>
+        const searchBox = document.getElementById("searchBox");
+        
+        const searchPlaceholders = [
+          "Search products...",
+          "Search by name...",
+          "Search by category...",
+          "Search by price...",
+          "Search by brand..."
+        ];
+        
+        let i = 0;
+        
+        setInterval(() => {
+          i = (i + 1) % searchPlaceholders.length;
+          searchBox.placeholder = searchPlaceholders[i];
+        }, 3000);
+        </script>
+        <!-- javascript for changing searchbar placeholders end -->
+
+
+
+
+        <!-- menu section start -->
+
+        <div class="menu w-100 d-flex flex-wrap flex-md-nowrap justify-content-center gap-2 px-2 py-2 " style="white-space: nowrap;">
+
+
+
+            <div class="dropdown ">
+                <button class="btn dropdown-toggle border-0 transforms fw-bold" type="button" data-bs-toggle="dropdown">
+                 MEN 
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./product_list.html">View All</a></li>
+                    <li><a class="dropdown-item" href="#">New arrival</a></li>
+                    <li><a class="dropdown-item" href="#">Trending</a></li>
+                    <li><a class="dropdown-item" href="#">Shop By Looks</a></li>
+                    <li><a class="dropdown-item" href="#Availability">Shop By color</a></li>
+                    <li><a class="dropdown-item" href="#brand">Shop By brand</a></li>
+                    <li><a class="dropdown-item" href="#">Shop By collection</a></li>
+                    <li><a class="dropdown-item" href="#Price">Shop By price</a></li>
+                </ul>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn  dropdown-toggle border-0 transforms" type="button" data-bs-toggle="dropdown">
+                WOMEN
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">View All</a></li>
+                    <li><a class="dropdown-item" href="#">New arrival</a></li>
+                    <li><a class="dropdown-item" href="#">Trending</a></li>
+                    <li><a class="dropdown-item" href="#">Shop By Looks</a></li>
+                    <li><a class="dropdown-item" href="#">Shop By color</a></li>
+                    <li><a class="dropdown-item" href="#">Shop By brand</a></li>
+                    <li><a class="dropdown-item" href="#">Shop By collection</a></li>
+                    <li><a class="dropdown-item" href="#">Shop By price</a></li>
+                </ul>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn  dropdown-toggle border-0 transforms" type="button" data-bs-toggle="dropdown">
+                SMART WATCHES
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">View All</a></li>
+                    <li><a class="dropdown-item" href="#">New arrival</a></li>
+                    <li><a class="dropdown-item" href="#">Trending</a></li>
+                    <li><a class="dropdown-item" href="#">Shop By gender</a></li>
+                    <li><a class="dropdown-item" href="#">Shop By color</a></li>
+                    <li><a class="dropdown-item" href="#">Shop By brand</a></li>
+                    <li><a class="dropdown-item" href="#">Shop By collection</a></li>
+                    <li><a class="dropdown-item" href="#">Shop By price</a></li>
+                </ul>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn  dropdown-toggle border-0 transforms" type="button" data-bs-toggle="dropdown">
+                PREMIUM WATCHES
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">View All</a></li>
+                    <li><a class="dropdown-item" href="#">Trending</a></li>
+                    <li><a class="dropdown-item" href="#">XYLYS</a></li>
+                    <li><a class="dropdown-item" href="#">Nebula</a></li>
+                    <li><a class="dropdown-item" href="#">Edge</a></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="btn  dropdown-toggle border-0 transforms" type="button" data-bs-toggle="dropdown">
+                WATCHES
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">View All</a></li>
+                    <li><a class="dropdown-item" href="#">New Arrivals</a></li>
+                    <li><a class="dropdown-item" href="#bestseller">Bestsellers</a></li>
+                    <li><a class="dropdown-item" href="#">Trending</a></li>
+                    <li><a class="dropdown-item" href="#">Shop By Function</a></li>
+                    <li><a class="dropdown-item" href="#">Shop By Collection</a></li>
+                    <li><a class="dropdown-item" href="#">Shop By Strap</a></li>
+                    <li><a class="dropdown-item" href="#">Shop By Price</a></li>
+                    <li><a class="dropdown-item" href="#">Shop By Dial</a></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="btn  dropdown-toggle border-0 transforms" type="button" data-bs-toggle="dropdown">
+                INTERNATIONAL BRANDS
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#titan">View All</a></li>
+                    <li><a class="dropdown-item" href="#titan">New Arrivals</a></li>
+                    <li><a class="dropdown-item" href="#bestseller">Bestsellers</a></li>
+                    <li><a class="dropdown-item" href="#titan">Casio</a></li>
+                    <li><a class="dropdown-item" href="#titan">Cerruti</a></li>
+                    <li><a class="dropdown-item" href="#police">Police</a></li>
+                    <li><a class="dropdown-item" href="#tommy">Tommy Hilfiger</a></li>
+                    <li><a class="dropdown-item" href="#anne">Anne Klein</a></li>
+                    <li><a class="dropdown-item" href="#raga">Raga</a></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="btn  dropdown-toggle border-0transforms" type="button" data-bs-toggle="dropdown">
+                GIFTING
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Shop By Price</a></li>
+                    <li><a class="dropdown-item" href="#">Watches For Bride</a></li>
+                    <li><a class="dropdown-item" href="#">Watches For Groom</a></li>
+                    <li><a class="dropdown-item" href="#">Watches For Mothe</a></li>
+                    <li><a class="dropdown-item" href="#">Watches For Father</a></li>
+                    <li><a class="dropdown-item" href="#">Watches For Brother</a></li>
+                    <li><a class="dropdown-item" href="#">Watches For Sister</a></li>
+                    
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="btn  underline border-0 transforms" type="button" data-bs-toggle="dropdown" >
+                SALE
+                </button>
+            </div>
+            <div class="dropdown">
+                <button class="btn underline  border-0 transforms" type="button" data-bs-toggle="dropdown">
+                WATCH SERVICE
+                </button>
+            </div>
+            <div class="dropdown">
+                <button class="btn  border-0 dropdown-toggle transforms" type="button" data-bs-toggle="dropdown">
+                MORE
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./index.html">Back To Home</a></li>
+                  <li><a class="dropdown-item" href="./signup.html">Log out</a></li>
+                    <li><a class="dropdown-item" href="./login.html">Login with another account</a></li>
+                    <li><a class="dropdown-item" href="#">Kids Watches</a></li>
+                    <li><a class="dropdown-item" href="#">Couple Watches</a></li>
+                    <li><a class="dropdown-item" href="#">Watches For Groom</a></li>
+                    <li><a class="dropdown-item" href="#">Clocks</a></li>
+                    <li><a class="dropdown-item" href="#">Accessories</a></li>
+                    <li><a class="dropdown-item" href="#">E-Gift Card</a></li>
+                    <li><a class="dropdown-item" href="#">Our Brands</a></li>
+                    <li><a class="dropdown-item" href="#">Encircle</a></li>
+                    <li><a class="dropdown-item" href="#">Corporate Gifting</a></li>
+                    <li><a class="dropdown-item" href="#">Currency Selector</a></li>
+                    <li><a class="dropdown-item" href="#">Luxury Watches</a></li>
+                </ul>
+              </div>
+              
+        </div>
+            
+        <!-- menu section end -->
+
+
+
+        <!-- availability section start -->
+
+        <!-- <div class="w-100 text-center p-2" style="background-color: rgb(236, 226, 213);">
+          <a href="#" class="text-decoration-none text-dark "><i class="fa-solid fa-location-dot"></i>check availability location </a>
+
+        </div> -->
+
+        <!-- availability section end -->
+
+
+
+        <!-- main body section start -->
+        
+        <div class="main-body  mx-auto d-flex mb-4" style="width: 85%;" >
+
+          
+          
+          
+          
+          <!-- aside image section start -->
+          <div class=" aside me-3 border" style="width: 40%; overflow-y: scroll; height: 100vh;scrollbar-width: none; position: sticky ; top: 0;">
+            
+            
+            <nav aria-label="breadcrumb" style="position: sticky; top: 0; ">
+              <ol class="breadcrumb bg-white px-0">
+                  <li class="breadcrumb-item"><a class="text-dark text-decoration-none" href="#">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Men</li>
+                  <li class="breadcrumb-item active  fw-bold" aria-current="page">Product</li>
+              </ol>
+            </nav>
+
+            <div class="">
+                  <img src="./images/titan_main_2.webp" alt="">
+                  <div class="">
+                    <i class="bi bi-three-dots"></i>
+                    <i class="bi bi-bookmark-heart"></i>
+                  </div>
+                </div>
+
+          </div>
+          <!-- aside image section end -->
+          
+
+
+          <!-- hero section start -->
+             
+
+
+          <div class="men_hero border " style="width: 60% ;">
+
+          </div>  
+          
+          <!-- hero section end -->
+
+        
+        
+    </div>
+
+        <!-- main body section end -->
+        
+  
+        
+        
+        <!-- footer section start -->
+        
+          <footer class="footer mt-1">
+            <div class="container py-5">
+              <div class="row text-start">
+
+                <div class="col-md-2 mb-4">
+                  <h5 class="text-uppercase mb-3 cursor">TILUS</h5>
+                  <p class="cursor">Your Perfect Watch Awaits. Discover the latest trends with confidence.</p>
+                </div>
+              
+                <div class="col-md-2 mb-4">
+                  <h6 class="mb-3 cursor">COLLECTIONS</h6>
+                  <ul class="list-unstyled">
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">Police Batman</a></li>
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">Casio</a></li>
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">Stellar</a></li>
+                    <li><a href="#"class="underline-white text-decoration-none mb-1">Raga Power Pearls</a></li>
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">Grandmaster</a></li>
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">Maritime</a></li>
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">Edifice</a></li>
+                  </ul>
+                </div>
+
+                <div class="col-md-2 mb-4">
+                  <h6 class="mb-3 cursor">CUSTOMER SERVICE</h6>
+                  <ul class="list-unstyled">
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">Payment Options</a></li>
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">Shipping & Returns</a></li>
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">Order Tracking</a></li>
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">Privacy Policy</a></li>
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">Encircle Program</a></li>
+                  </ul>
+                </div>
+  
+                <div class="col-md-2 mb-4">
+                  <h6 class="mb-3 cursor" >CONTACT US</h6>
+                  <ul class="list-unstyled">
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">1800-266-0123</a></li>
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">customercare@tilus.co.in</a></li>
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">Help & Contact</a></li>
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">FAQs</a></li>
+                  </ul>
+                </div>
+
+                <div class="col-md-2 mb-4">
+                  <h6 class="mb-3 cursor">ABOUT TILUS</h6>
+                  <ul class="list-unstyled">
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">Brand Protection</a></li>
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">Corporate</a></li>
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">Careers</a></li>
+                    <li><a href="#" class="underline-white text-decoration-none mb-1">Blog</a></li>
+                  </ul>
+                </div>
+
+                
+                <div class="col-md-2 mb-4">
+                  <h5 class="cursor">Download Titan World App</h5>
+                  <div class="d-flex mb-4">
+                    <a href="https://www.apple.com/app-store/" class="me-2 transforms"><img src="./images/appstore.webp" alt=""></a>
+                    <a href="https://play.google.com/"><img class="transforms" src="./images/playstore.webp " alt="" style="width: 185%;"></a>
+                  </div>
+                  <h6 class="mb-3 cursor">Follow Us</h6>
+                  <a href="https://www.facebook.com/" class="me-2 "><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" width="24" alt="Facebook" class="transforms"></a>
+                  <a href="https://www.instagram.com/" class="me-2 "><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" width="24" alt="Instagram" class="transforms"></a>
+                  
+                
+                </div>
+              
+              </div>
+            
+              <hr class="border-light">
+            
+              <div class="text-center small text-light mt-3">
+                <!-- &copy; <span class="cursor">2025 TILUS. All rights reserved.</span> -->
+                
+                  &copy; <span class="cursor me-5">2025 TILUS. All rights reserved.</span>
+                  <img src="./images/payment-method.svg" alt="">
+                
+              </div>
+            </div>
+          </footer>
+
+          <!-- footer section end -->
+
+
+        </div>
+  </div>
+  
+</body>

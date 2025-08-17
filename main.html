@@ -1,0 +1,667 @@
+          <div class=" aside me-3" style="width: 16%; overflow-y: scroll; height: 100vh;scrollbar-width: none; position: sticky ; top: 0;">
+            
+                
+                <nav aria-label="breadcrumb" style="position: sticky; top: 0; ">
+                    <ol class="breadcrumb bg-white px-0">
+                        <li class="breadcrumb-item"><a class="text-dark fw-bold text-decoration-none" href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Men</li>
+                    </ol>
+                </nav>
+              
+                <!-- Sort By -->
+                <div class="mb-3">
+                    <div class="dropdown">
+                        <button class="btn btn-outline-dark border-0 dropdown-toggle w-100" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="fw-bold">SORT BY:</span> <span class="fw-light">Best Sellers</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" onclick="setSort('Best Sellers')">Best Sellers</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="setSort('Price: Low to High')">Price: Low to High</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="setSort('Price: High to Low')">Price: High to Low</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="setSort('New Arrivals')">New Arrivals</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="setSort('New Arrivals')">Popularity</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="setSort('New Arrivals')">Discount</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="setSort('New Arrivals')">Tilus Recommends</a></li>
+                        </ul>
+                    </div>
+                </div>
+              
+                <!-- Filter By -->
+                <div class="filter-heading mb-3">
+                    <span class="ms-2 fw-bolder"><i class="bi bi-sliders me-1"></i> Filter By</span>
+                    <span class="clear-all me-2" onclick="clearFilters()">CLEAR ALL</span>
+                </div>
+              
+                
+              
+                <!-- Price  -->
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between " data-bs-toggle="collapse" href="#Price">
+                        <span class="fw-bold">Price</span>
+                        <span>+</span>
+                    </div>
+                    <div class="collapse mt-2" id="Price">
+                        <div class="d-flex align-items-center mt-2 w-100">
+                            ₹ <input type="number" class="price-input" id="minPrice" value="499"> 
+                            <span class="mx-2">To</span>
+                            ₹ <input type="number" class="price-input" id="maxPrice" value="800000">
+                        </div>
+                    </div>
+                </div>
+                <!-- Strap Material -->
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between" data-bs-toggle="collapse" href="#strapMaterial">
+                        <span class="fw-bold">Strap Material</span>
+                        <span>+</span>
+                    </div>
+                    <div class="collapse mt-2" id="strapMaterial">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Leather" id="strapLeather">
+                            <label class="form-check-label" for="strapLeather">Bimetal (2)</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="Metal" id="strapMetal">
+                          <label class="form-check-label" for="strapMetal">18 Karat Gold (5)</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="Leather" id="strapLeather">
+                          <label class="form-check-label" for="strapLeather">Plastic (174)</label>
+                      </div>
+                      <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="Leather" id="strapLeather">
+                          <label class="form-check-label" for="strapLeather">Silicone (136)</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Leather" id="strapLeather">
+                        <label class="form-check-label" for="strapLeather">Leather (731)</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Leather" id="strapLeather">
+                        <label class="form-check-label" for="strapLeather">Ceramic (25)</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Leather" id="strapLeather">
+                        <label class="form-check-label" for="strapLeather">Fabric (4)</label>
+                      </div>
+                    </div>
+                    </div>
+                    
+
+
+                <!-- Brands -->
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between" data-bs-toggle="collapse" href="#brands">
+                        <span class="fw-bold">Brands</span>
+                        <span>+</span>
+                    </div>
+                    <div class="collapse mt-2" id="brands">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Titan (751)" id="brandTitan">
+                            <label class="form-check-label" for="brandTitan">Titan</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Titan" id="brandTitan">
+                            <label class="form-check-label" for="brandTitan">Casio (630)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Fastrack (462)" id="brandFastrack">
+                            <label class="form-check-label" for="brandFastrack">Fastrack</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Titan" id="brandTitan">
+                            <label class="form-check-label" for="brandTitan">Sonata (462)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Titan" id="brandTitan">
+                            <label class="form-check-label" for="brandTitan">Tommy Hilfiger (149)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Titan" id="brandTitan">
+                            <label class="form-check-label" for="brandTitan">SF (146)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Titan" id="brandTitan">
+                            <label class="form-check-label" for="brandTitan">Police (121)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Titan" id="brandTitan">
+                            <label class="form-check-label" for="brandTitan">Kenneth Cole (114)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Titan" id="brandTitan">
+                            <label class="form-check-label" for="brandTitan">Xylys (61)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Titan" id="brandTitan">
+                            <label class="form-check-label" for="brandTitan">Nebula (58)</label>
+                        </div>                        
+                    </div>
+                </div>
+              
+                <!-- Strap Color -->
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between" data-bs-toggle="collapse" href="#strapColor">
+                        <span class="fw-bold">Strap Color</span>
+                        <span>+</span>
+                    </div>
+                    <div class="collapse mt-2" id="strapColor">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Black" id="colorBlack">
+                            <label class="form-check-label" for="colorBlack">Black (668)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Brown" id="colorBrown">
+                            <label class="form-check-label" for="colorBrown">White (4)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Brown" id="colorBrown">
+                            <label class="form-check-label" for="colorBrown">Blue (216)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Brown" id="colorBrown">
+                            <label class="form-check-label" for="colorBrown">Green (70)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Brown" id="colorBrown">
+                            <label class="form-check-label" for="colorBrown">Grey (99)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Brown" id="colorBrown">
+                            <label class="form-check-label" for="colorBrown">Golden (195)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Brown" id="colorBrown">
+                            <label class="form-check-label" for="colorBrown">Silver (318) </label>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Discounts -->
+                <div class="mb-3">
+                  <div class="d-flex justify-content-between" data-bs-toggle="collapse" href="#discounts">
+                    <span class="fw-bold">Discounts</span>
+                    <span>+</span>
+                  </div>
+                  <div class="collapse mt-2" id="discounts">
+                    <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="10%" id="discount10">
+                            <label class="form-check-label" for="discount10">Upto 10% Off (304)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="20%" id="discount20">
+                            <label class="form-check-label" for="discount20">10% - 20% Off (596)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="20%" id="discount20">
+                            <label class="form-check-label" for="discount20">20% - 30% Off (258)</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="20%" id="discount20">
+                            <label class="form-check-label" for="discount20">30% - 40% Off (68)</label>
+                          </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="20%" id="discount20">
+                            <label class="form-check-label" for="discount20">40% - 50% Off (68)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="20%" id="discount20">
+                            <label class="form-check-label" for="discount20">50% - 60% Off (26)</label>
+                          </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="20%" id="discount20">
+                            <label class="form-check-label" for="discount20">60% - 70% Off (13)</label>
+                          </div>
+                    </div>
+                </div>
+                
+                
+                <!-- Function -->
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between" data-bs-toggle="collapse" href="#function">
+                        <span class="fw-bold">Function</span>
+                        <span>+</span>
+                    </div>
+                    <div class="collapse mt-2" id="function">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Chronograph" id="funcChrono">
+                            <label class="form-check-label" for="funcChrono">Analog (1,210)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">World Time (3)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Multifunction (440)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Digital (74)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Ana-Digi (65)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Analog Dual Time (2)</label>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <!-- Collection -->
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between" data-bs-toggle="collapse" href="#Collection">
+                        <span class="fw-bold">Collection</span>
+                        <span>+</span>
+                      </div>
+                    <div class="collapse mt-2" id="Collection">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="Chronograph" id="funcChrono">
+                            <label class="form-check-label" for="funcChrono">After Dark (13)</label>
+                          </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">All Nighters (7)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Ana Digi (4)</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                          <label class="form-check-label" for="funcAnalog">Art Deco (1)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Aspire (41)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Athleisure (1)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Automatics (14)</label>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <!-- Dial Color -->
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between" data-bs-toggle="collapse" href="#DialColor">
+                        <span class="fw-bold">Dial Color</span>
+                        <span>+</span>
+                    </div>
+                    <div class="collapse mt-2" id="DialColor">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Black" id="colorBlack">
+                            <label class="form-check-label" for="colorBlack">Black (668)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Brown" id="colorBrown">
+                            <label class="form-check-label" for="colorBrown">White (4)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Brown" id="colorBrown">
+                            <label class="form-check-label" for="colorBrown">Blue (216)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Brown" id="colorBrown">
+                            <label class="form-check-label" for="colorBrown">Green (70)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Brown" id="colorBrown">
+                            <label class="form-check-label" for="colorBrown">Grey (99)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Brown" id="colorBrown">
+                            <label class="form-check-label" for="colorBrown">Golden (195)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Brown" id="colorBrown">
+                            <label class="form-check-label" for="colorBrown">Silver (318) </label>
+                        </div>
+                    </div>
+                </div>
+              
+                <!-- Dial Shape -->
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between" data-bs-toggle="collapse" href="#DialShape">
+                        <span class="fw-bold">Dial Shape</span>
+                        <span>+</span>
+                    </div>
+                    <div class="collapse mt-2" id="DialShape">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Chronograph" id="funcChrono">
+                            <label class="form-check-label" for="funcChrono">Octagon (3)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Special (73)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Anatome (5)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Rectangle (2)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Rectangular (105)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Round (2,008)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Shaped (41)</label>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+              
+                <!--  Dial Size -->
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between" data-bs-toggle="collapse" href="#DialSize">
+                        <span class="fw-bold"> Dial Size</span>
+                        <span>+</span>
+                    </div>
+                    <div class="collapse mt-2" id="DialSize">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Chronograph" id="funcChrono">
+                            <label class="form-check-label" for="funcChrono">20.70 mm (3)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">25.10 mm (7)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">25.40 mm (6)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">25.80 mm (8)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">25 mm (2)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">26.29 mm (1)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">27.40 mm (4)</label>
+                        </div>
+                        
+                    </div>
+                </div>
+              
+                <!-- Movement -->
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between" data-bs-toggle="collapse" href="#Movement">
+                        <span class="fw-bold">Movement</span>
+                        <span>+</span>
+                    </div>
+                    <div class="collapse mt-2" id="Movement">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Chronograph" id="funcChrono">
+                            <label class="form-check-label" for="funcChrono">Automatic (110)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Self Winding (9)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Digital (74)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Mechanical (6)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Hand Wound (5)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Micromotor (5)</label>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+              
+                <!-- Display Type
+ -->
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between" data-bs-toggle="collapse" href="#DisplayType">
+                        <span class="fw-bold">Display Type</span>
+                        <span>+</span>
+                    </div>
+                    <div class="collapse mt-2" id="DisplayType">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Chronograph" id="funcChrono">
+                            <label class="form-check-label" for="funcChrono">AMOLED (68)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Super AMOLED (4)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">TFT (3)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">UltraVU TFT (2)</label>
+                        </div>
+                    </div>
+                </div>
+              
+                <!-- Special Features -->
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between" data-bs-toggle="collapse" href="#Features">
+                        <span class="fw-bold">Special Features</span>
+                        <span>+</span>
+                    </div>
+                    <div class="collapse mt-2" id="Features">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Chronograph" id="funcChrono">
+                            <label class="form-check-label" for="funcChrono">Accelerometer (77)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Activity Tracker (77)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Alarm Clock (77)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Always On Display (65)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Audio Recording (4)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Calander (60)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Camera (3)</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Screen Size -->
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between" data-bs-toggle="collapse" href="#ScreenSize">
+                        <span class="fw-bold">Screen Size</span>
+                        <span>+</span>
+                    </div>
+                    <div class="collapse mt-2" id="ScreenSize">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Chronograph" id="funcChrono">
+                            <label class="form-check-label" for="funcChrono">3.35 CM (3)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">3.50 cm (1)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">3.63 CM (16)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">3.63 cm (16)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">3.6 CM (1)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">3.6 cm (5)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">3.8 cm (4)</label>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+              
+                <!-- Sport Type -->
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between" data-bs-toggle="collapse" href="#SportType">
+                        <span class="fw-bold">Sport Type</span>
+                        <span>+</span>
+                    </div>
+                    <div class="collapse mt-2" id="SportType">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Chronograph" id="funcChrono">
+                            <label class="form-check-label" for="funcChrono">Badminton (10)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Basketball (10)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Climbing (10)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Cycling (77)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Diving (13)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Fishing (13)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">Fitness (77)</label>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+              
+                <!-- Bluetooth Version -->
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between" data-bs-toggle="collapse" href="#BluetoothVersion">
+                        <span class="fw-bold">Bluetooth Version</span>
+                        <span>+</span>
+                    </div>
+                    <div class="collapse mt-2" id="BluetoothVersion">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Chronograph" id="funcChrono">
+                            <label class="form-check-label" for="funcChrono">5.2 (16)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">5.3 (25)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">V5.3 (33)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">v5.3 (5)</label>
+                        </div>
+                    </div>
+                </div>
+      
+                <!-- Battery Capacity -->
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between" data-bs-toggle="collapse" href="#BatteryCapacity">
+                        <span class="fw-bold">Battery Capacity</span>
+                        <span>+</span>
+                    </div>
+                    <div class="collapse mt-2" id="BatteryCapacity">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Chronograph" id="funcChrono">
+                            <label class="form-check-label" for="funcChrono">270mAh (4)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">280 mAh (5)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">300mAh (6)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">300 mAh (47)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">350 mAh (13)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Analog" id="funcAnalog">
+                            <label class="form-check-label" for="funcAnalog">360 mAh (4)</label>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Availability -->
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between" data-bs-toggle="collapse" href="#Availability">
+                        <span class="fw-bold">Availability</span>
+                        <span>+</span>
+                    </div>
+                    <div class="collapse mt-2" id="Availability">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Chronograph" id="funcChrono">
+                            <label class="form-check-label" for="funcChrono">Include Out of stock</label>
+                        </div>
+                        
+                    </div>
+                </div>
+              
+              
+            </div>

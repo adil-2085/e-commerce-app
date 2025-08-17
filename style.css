@@ -1,0 +1,249 @@
+body{
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  
+}
+.main{
+  width: 100%;
+  scroll-behavior: smooth;
+  /* height: 400%; */
+}
+.transforms{
+  transition: transform 0.3s ease-in-out;
+}
+
+.transforms:hover{
+  transform: scale(1.1);
+}
+
+/* index section start */
+
+.card-transform{
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-transform:hover{
+  transform: scale(1.01);
+  box-shadow: 2px 2px 5px rgb(230, 228, 228);
+}
+.scroll-transform{
+  transition: transform 0.3s ease-in-out;
+}
+
+.scroll-transform:hover{
+  transform: scale(1.015);
+}
+.cursor{
+  cursor: default;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; /* Optional: remove space */
+}
+
+/* Optional: style for smoother effect */
+.dropdown-menu {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Underline animation for dropdown toggle  */
+.dropdown-toggle {
+  position: relative;
+  overflow: hidden;
+    }
+    
+    .dropdown-toggle::after {
+      display: none; 
+    }
+    
+    .dropdown-toggle::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 3px;
+      width: 0%;
+      background-color:black; 
+      transition: width 0.5s ease;
+    }
+    
+    .dropdown-toggle:hover::before {
+      width: 100%;
+    }
+    
+    /* underline hover effect start */
+    
+    .underline{
+      position: relative;
+      overflow: hidden;
+    }
+
+.underline::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background-color: black; 
+  transition: width 0.4s ease;
+}
+
+.underline:hover::after {
+  width: 100%;
+}
+.underline-white{
+  position: relative;
+  overflow: hidden;
+}
+
+.underline-white::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 0%;
+  background-color: white; 
+  transition: width 0.4s ease;
+}
+
+.underline-white:hover::after {
+  width: 100%;
+}
+/* underline hover effect end */
+
+
+
+.scroll-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.scroll-content {
+  display: flex;
+  animation: scroll 200s linear infinite;
+}
+
+
+/* Keyframes for seamless loop */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Hide scrollbar for modern browsers */
+.scroll-container {
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+/* Heart icon styling */
+.heart-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  color: gray;
+  cursor: pointer;
+}
+.heart-icon:hover {
+  color: red;
+}
+
+.footer {
+  background-color: #111;
+  color: #ccc;
+}
+
+.footer a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.footer h5, .footer h6 {
+  color: #fff;
+}
+
+/* index section end */
+
+/* men_section start */
+
+
+.men-main{
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+
+.filter-heading {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.filter-heading .clear-all {
+    font-size: 0.9rem;
+    color: #ccc;
+    cursor: pointer;
+}
+.price-input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 80px;
+    text-align: center;
+    background: none;
+}
+.form-range {
+    accent-color: orange;
+}
+
+
+
+.men_hero_btn{
+  width: 100%;
+  background-color: white;
+  border: 0;
+}
+.men_hero_btn:hover{
+  width: 100%;
+  background-color: rgb(187, 186, 186);
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* men_section end */
