@@ -1,0 +1,11 @@
+<svg id="Pickup_At_Store_Icon" data-name="Pickup At Store Icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <rect id="Rectangle_14662" data-name="Rectangle 14662" width="24" height="24" fill="rgba(255,255,255,0)"/>
+  <g id="Icon" transform="translate(3.732 5.204)">
+    <path id="Path_10473" data-name="Path 10473" d="M10.7,12.545V2.156A1.428,1.428,0,0,0,9.444.6H1.851A1.428,1.428,0,0,0,.6,2.156v9.138a1.251,1.251,0,0,0,1.251,1.251h.4" transform="translate(-0.6 -0.6)" fill="none" stroke="#3e3e3e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <line id="Line_1205" data-name="Line 1205" x2="2.529" transform="translate(4.938 11.945)" fill="none" stroke="#3e3e3e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <path id="Path_10474" data-name="Path 10474" d="M7.071,22.116a1.644,1.644,0,1,1-1.646-1.641A1.644,1.644,0,0,1,7.071,22.116Z" transform="translate(-2.133 -10.171)" fill="none" stroke="#3e3e3e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <path id="Path_10475" data-name="Path 10475" d="M26.432,22.116a1.644,1.644,0,1,1-1.646-1.641A1.644,1.644,0,0,1,26.432,22.116Z" transform="translate(-11.457 -10.171)" fill="none" stroke="#3e3e3e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <path id="Path_10476" data-name="Path 10476" d="M21.666,20.71H20.073V17.554" transform="translate(-9.978 -8.765)" fill="none" stroke="#3e3e3e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <path id="Path_10477" data-name="Path 10477" d="M27.112,16.279h.8a.693.693,0,0,0,.759-.607V12.587a2.488,2.488,0,0,0-.535-1.412.243.243,0,0,0-.053-.066c-.033-.04-.059-.073-.079-.093a.228.228,0,0,0-.026-.033l.158.191a.243.243,0,0,0-.053-.066L28,11.016a.228.228,0,0,0-.026-.033l-1.6-2.174a1.286,1.286,0,0,0-.983-.455h-.845" transform="translate(-12.135 -4.334)" fill="none" stroke="#3e3e3e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+  </g>
+</svg>

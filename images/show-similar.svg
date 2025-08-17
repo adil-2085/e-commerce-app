@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+  <g id="Comapre" transform="translate(-377.714 -1708.713)">
+    <circle id="Ellipse_223" data-name="Ellipse 223" cx="17" cy="17" r="17" transform="translate(377.714 1708.713)" fill="none" opacity="0.042"/>
+    <circle id="Ellipse_398" data-name="Ellipse 398" cx="17" cy="17" r="17" transform="translate(377.714 1708.713)" fill="none" opacity="0.042"/>
+    <g id="Group_21604" data-name="Group 21604" transform="translate(-1266.009 6093.235)">
+      <g id="Group_22497" data-name="Group 22497" transform="translate(0 -0.667)">
+        <g id="Rectangle_10133" data-name="Rectangle 10133" transform="matrix(0.985, -0.174, 0.174, 0.985, 1651.666, -4371.475)" fill="#fff" stroke="#3e3e3e" stroke-width="1">
+          <rect width="7.103" height="10.331" rx="1" stroke="none"/>
+          <rect x="0.5" y="0.5" width="6.103" height="9.331" rx="0.5" fill="none"/>
+        </g>
+        <g id="Rectangle_10134" data-name="Rectangle 10134" transform="matrix(0.974, 0.225, -0.225, 0.974, 1662.802, -4372.708)" fill="#fff" stroke="#3e3e3e" stroke-width="1">
+          <rect width="7.103" height="10.331" rx="1" stroke="none"/>
+          <rect x="0.5" y="0.5" width="6.103" height="9.331" rx="0.5" fill="none"/>
+        </g>
+        <rect id="Rectangle_10550" data-name="Rectangle 10550" width="1.729" height="12" transform="translate(1656.724 -4360.831) rotate(180)" fill="#fff"/>
+        <rect id="Rectangle_10551" data-name="Rectangle 10551" width="1.915" height="12" transform="translate(1666.223 -4360.708) rotate(180)" fill="#fff"/>
+      </g>
+      <g id="Rectangle_10132" data-name="Rectangle 10132" transform="translate(1656.143 -4374)" fill="#fff" stroke="#3e3e3e" stroke-width="1">
+        <rect width="9.103" height="12.914" rx="1" stroke="none"/>
+        <rect x="0.5" y="0.5" width="8.103" height="11.914" rx="0.5" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

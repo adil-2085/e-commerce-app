@@ -144,7 +144,6 @@ body{
   }
 }
 
-/* Hide scrollbar for modern browsers */
 .scroll-container {
   overflow-x: auto;
   scrollbar-width: none;
@@ -152,7 +151,6 @@ body{
 .scroll-container::-webkit-scrollbar {
   display: none;
 }
-/* Heart icon styling */
 .heart-icon {
   position: absolute;
   top: 10px;
@@ -231,7 +229,6 @@ body{
 
 
 }
-
 
 
 
