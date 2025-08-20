@@ -23,13 +23,16 @@
 </head>
 <body>
   <div class="main">
+    <div class="scroll-container bg-dark d-flex ">
+        <span class="scroll-content">SALE is Live! Use Code NEW10 and get 10% OFF* on non-discounted Watches </span>
+      </div>
 
         <!-- nav bar section start -->
 
         <nav class="navbar navbar-expand-lg bg-body-secondary" style="position: sticky; top: 0; z-index: 1050;">
             <div class="container-fluid">
-              <i class="fa-brands fa-slack fa-2x me-2"></i>
-              <h3 class="fw-bold me-auto cursor">TILUS</h3>
+              <i class="fa-brands fa-slack fa-2x me-2 ms-4"></i>
+              <h3 class="fw-bold me-auto cursor mt-1">TILUS</h3>
             
               <!-- Mobile toggle -->
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
@@ -43,12 +46,35 @@
                   <button class="btn btn-outline-dark" type="submit">Search</button>
                 </form>
             
-                <div class="d-flex text-center">
-                  <div class="me-3 underline transforms"><i class="bi bi-person fs-4"></i><p class="small m-0 cursor">Account</p></div>
-                  <div class="me-2 underline transforms"><i class="bi bi-heart fs-4"></i><p class="small m-0 cursor">Wishlist</p></div>
-                  <div class="px-2 underline transforms"><i class="bi bi-bag fs-4"></i><p class="small m-0 cursor">Cart</p></div>
-                  <div class="px-2 underline transforms"><i class="bi bi-box-seam fs-4"></i><p class="small m-0 cursor">Track</p></div>
-                </div>
+                <div class="d-flex text-center  me-5">
+              <div class="drop me-2 ">
+                        <div class="nav-item dropdown ms-4 no-bullet ">
+                        <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-person fs-4"></i> <br>Account
+                        </a>
+                    <ul class="dropdown-menu ">
+                      <li><a class="dropdown-item " href="#"><i class="fa-regular fa-user"></i>My Profile</a></li>
+                      <li><a class="dropdown-item " href="#"><i class="fa-solid fa-box-open"></i>Orders</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa-regular fa-heart"></i>Wishlist (5)</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa-regular fa-tag"></i> Coupons</a></li>
+                      <li><a class="dropdown-item" href="#"> <i class="fa-regular fa-bell"></i> Notification</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa-regular fa-arrow-right-from-bracket"></i> Logout</a></li>
+                    </ul>
+                </div></div>
+              <a href="./product_list.html" class="text-decoration-none text-dark"><div class="mx-2 px-2 underline transforms">
+                <i class="bi bi-heart fs-4"></i>
+                <p class="small m-0 cursor">Wishlist</p>
+              </div></a>
+              <a href="./cart_page.html" class="text-decoration-none text-dark"><div class="mx-2 px-2 underline transforms">
+                <i class="bi bi-bag fs-4"></i>
+                <p class="small m-0 cursor">Cart</p>
+              </div></a>
+              <a href="./order_details.html" class="text-decoration-none text-dark"><div class="mx-2 px-2 underline transforms">
+                <i class="bi bi-box-seam fs-4"></i>
+                <p class="small m-0 cursor">Track</p>
+              </div></a>
+            </div>
 
               </div>
             </div>
@@ -97,13 +123,13 @@
                 </button>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="./product_list.html">View All</a></li>
-                    <li><a class="dropdown-item" href="#">New arrival</a></li>
-                    <li><a class="dropdown-item" href="#">Trending</a></li>
-                    <li><a class="dropdown-item" href="#">Shop By Looks</a></li>
-                    <li><a class="dropdown-item" href="#">Shop By color</a></li>
+                    <li><a class="dropdown-item" href="./product_list.html">New arrival</a></li>
+                    <li><a class="dropdown-item" href="#bestseller">Trending</a></li>
+                    <li><a class="dropdown-item" href="./product_list.html">Shop By Looks</a></li>
+                    <li><a class="dropdown-item" href="./product_list.html">Shop By color</a></li>
                     <li><a class="dropdown-item" href="#brand">Shop By brand</a></li>
-                    <li><a class="dropdown-item" href="#">Shop By collection</a></li>
-                    <li><a class="dropdown-item" href="#">Shop By price</a></li>
+                    <li><a class="dropdown-item" href="./product_list.html">Shop By collection</a></li>
+                    <li><a class="dropdown-item" href="./product_list.html">Shop By price</a></li>
                 </ul>
             </div>
 
